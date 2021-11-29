@@ -1,0 +1,293 @@
+{
+    "@id": "dtmi:com:ngsi-ld:UnmannedAerialVehicle;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - Unmanned Aerial Vehicle schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/UnmannedAerialVehicle/schema.json",
+    "description": "This entity contains a harmonised description of a specific Unmanned Aerial Vehicle (UAV). This entity is primarily associated with UAV command and control and related UAV transport applications.",
+    "displayName": "UnmannedAerialVehicle",
+    "contents": [
+        {
+            "name": "UnmannedAerialVehicleModel",
+            "writable": true,
+            "displayName": "UnmannedAerialVehicleModel"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "elevation",
+            "writable": true,
+            "displayName": "elevation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The elevation of the UAV (relative to ground level at the specified location). Specify value and units of measure."
+        },
+        {
+            "name": "fuel",
+            "writable": true,
+            "displayName": "fuel",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "Current fuel load of the UAV. Specify value and units of measure"
+        },
+        {
+            "name": "groundSpeed",
+            "writable": true,
+            "displayName": "groundSpeed",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The latest reported ground speed of the UAV. Specify value and units of measure"
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "observedAt",
+            "writable": true,
+            "displayName": "observedAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Indicates the date/time of the latest monitoring report or update."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "operator",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A list detailing the operator or operators of the UAV. Refers to one or more Schema.org person or organization.https://schema.org/Personhttps://schema.org/Organization",
+            "displayName": "operator"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "flightStatus",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "flight",
+                        "displayName": "flight",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "hover",
+                        "displayName": "hover",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "land",
+                        "displayName": "land",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "stop",
+                        "displayName": "stop",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "takeoff",
+                        "displayName": "takeoff",
+                        "enumValue": 5
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "operationMode",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "vlos",
+                        "displayName": "vlos",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "evlos",
+                        "displayName": "evlos",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "bvlos",
+                        "displayName": "bvlos",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "automated",
+                        "displayName": "automated",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "workStatus",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "finish",
+                        "displayName": "finish",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "prepare",
+                        "displayName": "prepare",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "stop",
+                        "displayName": "stop",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "work",
+                        "displayName": "work",
+                        "enumValue": 4
+                    }
+                ]
+            }
+        }
+    ]
+}
