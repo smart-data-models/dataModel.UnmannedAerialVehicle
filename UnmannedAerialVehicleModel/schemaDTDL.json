@@ -3,7 +3,7 @@
     "@type": "Interface",
     "@context": "dtmi:dtdl:context;2",
     "comment": "Smart Data models - UnmannedAerialVehicleModel schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/UnmannedAerialVehicleModel/schema.json",
-    "description": "A description of a UAV-Model",
+    "description": "This entity contains a harmonised description of a generic Unmanned Ariel Vehicle (UAV) model and is applicable to UAV command and control and related UAV transport applications.",
     "displayName": "UnmannedAerialVehicleModel",
     "contents": [
         {
