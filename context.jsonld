@@ -1,5 +1,6 @@
 {
     "@context": {
+        "UnmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicle",
         "UnmannedAerialVehicleModel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleModel",
         "UnmannedAutonomousVehicleADSBroadcast": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAutonomousVehicleADSBroadcast",
         "address": "https://smartdatamodels.org/address",
@@ -13,6 +14,12 @@
         "description": "http://purl.org/dc/terms/description",
         "documentation": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/documentation",
         "elevation": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/elevation",
+        "endAt": {
+            "@id": "ngsi-ld:endAt",
+            "@type": "DateTime"
+        },
+        "eventResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventResult",
+        "eventType": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventType",
         "flightStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/flightStatus",
         "fuel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/fuel",
         "fuelType": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/fuelType",
@@ -41,6 +48,10 @@
         "rotors": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/rotors",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
         "source": "https://smartdatamodels.org/source",
+        "startAt": {
+            "@id": "ngsi-ld:startAt",
+            "@type": "DateTime"
+        },
         "type": "@type",
         "unmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAutonomousVehicle",
         "workStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/workStatus"

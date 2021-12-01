@@ -1,0 +1,260 @@
+{
+    "@id": "dtmi:com:ngsi-ld:UnmannedAerialVehicleEvent;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - UnmannedAerialVehicleEvent schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/UnmannedAerialVehicleEvent/schema.json",
+    "description": "The UAVEvent records the incursion of a specific UAV into or near protected airspace or locations. It also records the control measure taken. This entity is primarily associated with UAV command and control and related UAV transport applications.",
+    "displayName": "UnmannedAerialVehicleEvent",
+    "contents": [
+        {
+            "name": "UnmannedAerialVehicle",
+            "writable": true,
+            "displayName": "UnmannedAerialVehicle"
+        },
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "elevation",
+            "writable": true,
+            "displayName": "elevation",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The elevation of the UAV (relative to ground level at the specified location). Specify value and units of measure."
+        },
+        {
+            "name": "endAt",
+            "writable": true,
+            "displayName": "endAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Indicates the date/time of when the event ended (if it has ended)."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "originator",
+            "writable": true,
+            "displayName": "originator"
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "name": "startAt",
+            "writable": true,
+            "displayName": "startAt",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Indicates the date/time of when the event started."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "eventResult",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "alarm",
+                        "displayName": "alarm",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "forceBack",
+                        "displayName": "forceBack",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "forceHover",
+                        "displayName": "forceHover",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "forceLand",
+                        "displayName": "forceLand",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "logged",
+                        "displayName": "logged",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "notify",
+                        "displayName": "notify",
+                        "enumValue": 6
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "eventType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "illegalFlight",
+                        "displayName": "illegalFlight",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "closeToUnpermittedAirspace",
+                        "displayName": "closeToUnpermittedAirspace",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "overSpeed",
+                        "displayName": "overSpeed",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "overHeight",
+                        "displayName": "overHeight",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "illegalWork",
+                        "displayName": "illegalWork",
+                        "enumValue": 5
+                    }
+                ]
+            }
+        }
+    ]
+}
