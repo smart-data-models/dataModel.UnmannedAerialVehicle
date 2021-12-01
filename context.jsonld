@@ -1,0 +1,35 @@
+{
+    "@context": {
+        "UnmannedAerialVehicleModel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleModel",
+        "UnmannedAutonomousVehicleADSBroadcast": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAutonomousVehicleADSBroadcast",
+        "address": "https://smartdatamodels.org/address",
+        "alternateName": "https://smartdatamodels.org/alternateName",
+        "areaServed": "https://smartdatamodels.org/areaServed",
+        "dataProvider": "https://smartdatamodels.org/dataProvider",
+        "dateCreated": "https://smartdatamodels.org/dateCreated",
+        "dateModified": "https://smartdatamodels.org/dateModified",
+        "description": "http://purl.org/dc/terms/description",
+        "elevation": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/elevation",
+        "flightStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/flightStatus",
+        "fuel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/fuel",
+        "groundSpeed": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/groundSpeed",
+        "id": "@id",
+        "location": "ngsi-ld:location",
+        "name": "https://smartdatamodels.org/name",
+        "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
+        "observedAt": {
+            "@id": "ngsi-ld:observedAt",
+            "@type": "DateTime"
+        },
+        "operationMode": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operationMode",
+        "operator": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operator",
+        "originatedByUnmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/originatedByUnmannedAutonomousVehicle",
+        "originator": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/originator",
+        "owner": "https://smartdatamodels.org/owner",
+        "seeAlso": "https://smartdatamodels.org/seeAlso",
+        "source": "https://smartdatamodels.org/source",
+        "type": "@type",
+        "unmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAutonomousVehicle",
+        "workStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/workStatus"
+    }
+}
