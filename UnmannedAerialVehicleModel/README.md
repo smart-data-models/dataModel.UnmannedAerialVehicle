@@ -1,9 +1,9 @@
 # UnmannedAerialVehicleModel
-Version: 0.0.1
+Version: 0.0.2
 
 ## Description 
 
-A description of a UAV-Model
+This entity contains a harmonised description of a generic Unmanned Ariel Vehicle (UAV) model and is applicable to UAV command and control and related UAV transport applications.
 
 This data model comes from the original project GSMA IoT project, https://www.gsma.com/iot/iot-big-data/.
 ### Specification
