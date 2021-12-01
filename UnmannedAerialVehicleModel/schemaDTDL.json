@@ -1,0 +1,359 @@
+{
+    "@id": "dtmi:com:ngsi-ld:UnmannedAerialVehicleModel;0",
+    "@type": "Interface",
+    "@context": "dtmi:dtdl:context;2",
+    "comment": "Smart Data models - UnmannedAerialVehicleModel schema adapted to DTDL from smartdatamodels.org. Source: https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/UnmannedAerialVehicleModel/schema.json",
+    "description": "A description of a UAV-Model",
+    "displayName": "UnmannedAerialVehicleModel",
+    "contents": [
+        {
+            "name": "alternateName",
+            "writable": true,
+            "displayName": "alternateName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "An alternative name for this item"
+        },
+        {
+            "name": "areaServed",
+            "writable": true,
+            "displayName": "areaServed",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The geographic area where a service or offered item is provided"
+        },
+        {
+            "name": "brandName",
+            "writable": true,
+            "displayName": "brandName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of the brand name of this Unmanned Aerial Vehicle Model."
+        },
+        {
+            "name": "dataProvider",
+            "writable": true,
+            "displayName": "dataProvider",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+        },
+        {
+            "name": "dateCreated",
+            "writable": true,
+            "displayName": "dateCreated",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "dateModified",
+            "writable": true,
+            "displayName": "dateModified",
+            "@type": "Property",
+            "schema": "dateTime",
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+        },
+        {
+            "name": "description",
+            "writable": true,
+            "displayName": "description",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A description of this item"
+        },
+        {
+            "name": "documentation",
+            "writable": true,
+            "displayName": "documentation",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "URI reference (URL/URN) to Product Data Sheet or other manufacturers documentation about this Unmanned Aerial Vehicle Model."
+        },
+        {
+            "name": "manufacturerName",
+            "writable": true,
+            "displayName": "manufacturerName",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of the manufacturer of this Unmanned Aerial Vehicle Model."
+        },
+        {
+            "name": "maxFlightAltitude",
+            "writable": true,
+            "displayName": "maxFlightAltitude",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The maximum flight altitude of the Unmanned Aerial Vehicle Model above ground. Specify value and units of measure."
+        },
+        {
+            "name": "maxFlightTime",
+            "writable": true,
+            "displayName": "maxFlightTime",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The maximum duration of flight of the Unmanned Aerial Vehicle Model with full fuel and no load. Specify value and units of measure."
+        },
+        {
+            "name": "maxGroundVelocity",
+            "writable": true,
+            "displayName": "maxGroundVelocity",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The maximum ground velocity of the Unmanned Aerial Vehicle Model (under still wind conditions). Specify value and units of measure."
+        },
+        {
+            "name": "maxLoad",
+            "writable": true,
+            "displayName": "maxLoad",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The maximum load that the Unmanned Aerial Vehicle is permitted to transport. Specify value and units of measure."
+        },
+        {
+            "name": "minUnladenWeight",
+            "writable": true,
+            "displayName": "minUnladenWeight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The weight of the Unmanned Aerial Vehicle with full fuel but no load. Specify value and units of measure."
+        },
+        {
+            "name": "minWeight",
+            "writable": true,
+            "displayName": "minWeight",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The weight of the Unmanned Aerial Vehicle without fuel or load. Specify value and units of measure."
+        },
+        {
+            "name": "model",
+            "writable": true,
+            "displayName": "model",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The UAV models identifier, which may be a Unmanned Aerial Vehicle Model."
+        },
+        {
+            "name": "name",
+            "writable": true,
+            "displayName": "name",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "The name of this item."
+        },
+        {
+            "name": "rotors",
+            "writable": true,
+            "displayName": "rotors",
+            "@type": "Property",
+            "schema": "long",
+            "comment": "The number of the rotors of the Unmanned Aerial Vehicle Model."
+        },
+        {
+            "name": "seeAlso",
+            "writable": true,
+            "displayName": "seeAlso"
+        },
+        {
+            "name": "source",
+            "writable": true,
+            "displayName": "source",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+        },
+        {
+            "@type": "Telemetry",
+            "name": "owner",
+            "schema": {
+                "@type": "Array",
+                "elementSchema": "string"
+            },
+            "comment": "A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)",
+            "displayName": "owner"
+        },
+        {
+            "@type": "object",
+            "name": "address",
+            "comment": "The mailing address",
+            "displayName": "address",
+            "fields": [
+                {
+                    "name": "addressCountry",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressLocality",
+                    "schema": "string"
+                },
+                {
+                    "name": "addressRegion",
+                    "schema": "string"
+                },
+                {
+                    "name": "postOfficeBoxNumber",
+                    "schema": "string"
+                },
+                {
+                    "name": "postalCode",
+                    "schema": "string"
+                },
+                {
+                    "name": "streetAddress",
+                    "schema": "string"
+                }
+            ]
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Point",
+            "schema": "point"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_LineString",
+            "schema": "lineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_Polygon",
+            "schema": "polygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPoint",
+            "schema": "multiPoint"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiLineString",
+            "schema": "multiLineString"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "location_MultiPolygon",
+            "schema": "multiPolygon"
+        },
+        {
+            "@type": "Telemetry",
+            "name": "categoryUAV",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "aerialPhotography",
+                        "displayName": "aerialPhotography",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "industry",
+                        "displayName": "industry",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "mailing",
+                        "displayName": "mailing",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "plantProtection",
+                        "displayName": "plantProtection",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "routingInspection",
+                        "displayName": "routingInspection",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "transportation",
+                        "displayName": "transportation",
+                        "enumValue": 6
+                    }
+                ]
+            }
+        },
+        {
+            "@type": "Telemetry",
+            "name": "fuelType",
+            "schema": {
+                "@type": "Enum",
+                "valueSchema": "string",
+                "enumValues": [
+                    {
+                        "name": "biodiesel",
+                        "displayName": "biodiesel",
+                        "enumValue": 1
+                    },
+                    {
+                        "name": "cng",
+                        "displayName": "cng",
+                        "enumValue": 2
+                    },
+                    {
+                        "name": "diesel",
+                        "displayName": "diesel",
+                        "enumValue": 3
+                    },
+                    {
+                        "name": "electric",
+                        "displayName": "electric",
+                        "enumValue": 4
+                    },
+                    {
+                        "name": "ethanol",
+                        "displayName": "ethanol",
+                        "enumValue": 5
+                    },
+                    {
+                        "name": "gasoline",
+                        "displayName": "gasoline",
+                        "enumValue": 6
+                    },
+                    {
+                        "name": "hybrid electric/petrol",
+                        "displayName": "hybrid electric/petrol",
+                        "enumValue": 7
+                    },
+                    {
+                        "name": "hybrid electric/diesel",
+                        "displayName": "hybrid electric/diesel",
+                        "enumValue": 8
+                    },
+                    {
+                        "name": "hydrogen",
+                        "displayName": "hydrogen",
+                        "enumValue": 9
+                    },
+                    {
+                        "name": "lpgAutogas",
+                        "displayName": "lpgAutogas",
+                        "enumValue": 10
+                    },
+                    {
+                        "name": "other",
+                        "displayName": "other",
+                        "enumValue": 11
+                    },
+                    {
+                        "name": "petrol",
+                        "displayName": "petrol",
+                        "enumValue": 12
+                    },
+                    {
+                        "name": "petrol(unleaded)",
+                        "displayName": "petrol(unleaded)",
+                        "enumValue": 13
+                    },
+                    {
+                        "name": "petrol(leaded)",
+                        "displayName": "petrol(leaded)",
+                        "enumValue": 14
+                    }
+                ]
+            }
+        }
+    ]
+}
