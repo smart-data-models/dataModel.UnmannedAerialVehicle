@@ -41,12 +41,14 @@
             "@type": "DateTime"
         },
         "operationMode": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operationMode",
+        "operationalInstance": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operationalInstance",
         "operator": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operator",
         "originatedByUnmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/originatedByUnmannedAutonomousVehicle",
         "originator": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/originator",
         "owner": "https://smartdatamodels.org/owner",
         "rotors": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/rotors",
         "seeAlso": "https://smartdatamodels.org/seeAlso",
+        "softwareApplication": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/softwareApplication",
         "source": "https://smartdatamodels.org/source",
         "startAt": {
             "@id": "ngsi-ld:startAt",
