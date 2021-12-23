@@ -21,6 +21,7 @@
         },
         "eventResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventResult",
         "eventType": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventType",
+        "flightControlPolicy": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/flightControlPolicy",
         "flightMessage": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/flightMessage",
         "flightStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/flightStatus",
         "fuel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/fuel",
@@ -59,6 +60,7 @@
         "type": "@type",
         "unmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAerialVehicle",
         "unmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAutonomousVehicle",
+        "validationResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/validationResult",
         "workStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/workStatus"
     }
 }
