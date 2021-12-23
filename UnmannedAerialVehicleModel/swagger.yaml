@@ -9,9 +9,9 @@ components:
       $ref: "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleModel/model.yaml#/UnmannedAerialVehicleModel"
 info:
   description:  |
-    A description of a UAV-Model
+    This entity contains a harmonised description of a generic Unmanned Ariel Vehicle (UAV) model and is applicable to UAV command and control and related UAV transport applications.
   title: UnmannedAerialVehicleModel
-  version: "0.0.1"
+  version: "0.0.2"
 openapi: "3.0.0"
 
 paths: 

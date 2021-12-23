@@ -9,7 +9,7 @@ The following entity types are available:
 
 - [UnmannedAerialVehicleEvent](https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleEvent/README.md). The UAVEvent records the incursion of a specific UAV into or near protected airspace or locations. It also records the control measure taken. This entity is primarily associated with UAV command and control and related UAV transport applications.
 
-- [UnmannedAerialVehicleModel](https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleModel/README.md). A description of a UAV-Model
+- [UnmannedAerialVehicleModel](https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleModel/README.md). This entity contains a harmonised description of a generic Unmanned Ariel Vehicle (UAV) model and is applicable to UAV command and control and related UAV transport applications.
 
 
 
