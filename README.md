@@ -13,6 +13,8 @@ The following entity types are available:
 
 - [UnmannedAerialVehicleTMS](https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMS/README.md). This entity contains a harmonized description of a specific Unmanned Aerial Vehicle (UAV) Traffic Management Software Application that is designed to listen to and monitor the information transmitted by UAV’s, typically this software application would be operated at a ground station. This entity is primarily associated with UAV command and control applications.
 
+- [UnmannedAerialVehicleTMSFlightMessage](https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMSFlightMessage/README.md). This entity contains a harmonised description of a generic UAV UTM Flight Message, which contains a Global UTM Association protocol message. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UnmannedAerialVehicleTMSFlightMessage instance is related to a specific UAV instance.
+
 
 
 ### Contributors

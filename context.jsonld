@@ -11,6 +11,7 @@
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
         "dateModified": "https://smartdatamodels.org/dateModified",
+        "dateObserved": "https://smartdatamodels.org/dateObserved",
         "description": "http://purl.org/dc/terms/description",
         "documentation": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/documentation",
         "elevation": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/elevation",
@@ -20,6 +21,7 @@
         },
         "eventResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventResult",
         "eventType": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventType",
+        "flightMessage": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/flightMessage",
         "flightStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/flightStatus",
         "fuel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/fuel",
         "fuelType": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/fuelType",
@@ -55,6 +57,7 @@
             "@type": "DateTime"
         },
         "type": "@type",
+        "unmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAerialVehicle",
         "unmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAutonomousVehicle",
         "workStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/workStatus"
     }
