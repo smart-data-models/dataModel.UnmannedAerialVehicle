@@ -1,7 +1,20 @@
 UnmannedAerialVehicleADSB:
-  description: 'This entity contains a harmonised description of a generic UnmannedAutonomousVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.'
+  description: 'This entity contains a harmonised description of a generic UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.'
   properties:
-    UnmannedAutonomousVehicleADSBroadcast:
+    UnmannedAerialVehicle:
+      anyOf:
+        - description: 'Property. Identifier format of any NGSI entity'
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+        - description: 'Property. Identifier format of any NGSI entity'
+          format: uri
+          type: string
+      description: 'Reference to the Unmanned Aerial Vehicle entity to which this broadcast message relates.'
+      x-ngsi:
+        type: Relationship
+    UnmannedAerialVehicleADSBroadcast:
       description: 'A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits.'
       type: string
       x-ngsi:
@@ -241,7 +254,7 @@ UnmannedAerialVehicleADSB:
       type: string
       x-ngsi:
         type: Property
-    originatedByUnmannedAutonomousVehicle:
+    originatedByUnmannedAerialVehicle:
       description: 'A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV.'
       type: boolean
       x-ngsi:
@@ -285,25 +298,12 @@ UnmannedAerialVehicleADSB:
       x-ngsi:
         type: Property
     type:
-      description: 'NGSI Entity identifier. It has to be UnmannedAutonomousVehicleADSB'
+      description: 'NGSI Entity identifier. It has to be UnmannedAerialVehicleADSB'
       enum:
-        - UnmannedAutonomousVehicleADSB
+        - UnmannedAerialVehicleADSB
       type: string
       x-ngsi:
         type: Property
-    unmannedAutonomousVehicle:
-      anyOf:
-        - description: 'Property. Identifier format of any NGSI entity'
-          maxLength: 256
-          minLength: 1
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
-          type: string
-        - description: 'Property. Identifier format of any NGSI entity'
-          format: uri
-          type: string
-      description: 'Reference to the Unmanned Autonomous Vehicle entity to which this broadcast message relates.'
-      x-ngsi:
-        type: Relationship
   required:
     - id
     - type
@@ -311,6 +311,6 @@ UnmannedAerialVehicleADSB:
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md
-  x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/schema.json
+  x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json
   x-model-tags: GSMA
-  x-version: 0.0.1
+  x-version: 0.1.0
