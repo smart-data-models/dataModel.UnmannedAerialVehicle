@@ -1,10 +1,9 @@
-[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)
-# UnmannedAerialVehicleADSB
-Version: 0.0.1
+# UnmannedAerialVehicleADSB
+Version: 0.1.0
 
 ## Description 
 
-This entity contains a harmonised description of a generic UnmannedAutonomousVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.
+This entity contains a harmonised description of a generic UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.
 
 This data model comes from the original project GSMA IoT project, https://www.gsma.com/iot/iot-big-data/.
 ### Specification
