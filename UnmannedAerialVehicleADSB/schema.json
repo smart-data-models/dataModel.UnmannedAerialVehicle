@@ -1,10 +1,10 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "$schemaVersion": "0.0.1",
+  "$schemaVersion": "0.1.0",
   "modelTags": "GSMA",
-  "$id": "https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/schema.json",
+  "$id": "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json",
   "title": "Smart Data models - UAV-ADSB schema",
-  "description": "This entity contains a harmonised description of a generic UnmannedAutonomousVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.",
+  "description": "This entity contains a harmonised description of a generic UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.",
   "type": "object",
   "allOf": [
     {
@@ -17,12 +17,12 @@
       "properties": {
         "type": {
           "type": "string",
-          "description": "Property. NGSI Entity identifier. It has to be UnmannedAutonomousVehicleADSB",
+          "description": "Property. NGSI Entity identifier. It has to be UnmannedAerialVehicleADSB",
           "enum": [
-            "UnmannedAutonomousVehicleADSB"
+            "UnmannedAerialVehicleADSB"
           ]
         },
-        "unmannedAutonomousVehicle": {
+        "UnmannedAerialVehicle": {
           "anyOf": [
             {
               "type": "string",
@@ -37,14 +37,14 @@
               "description": "Property. Identifier format of any NGSI entity"
             }
           ],
-          "description": "Relationship. Reference to the Unmanned Autonomous Vehicle entity to which this broadcast message relates."
+          "description": "Relationship. Reference to the Unmanned Aerial Vehicle entity to which this broadcast message relates."
         },
         "observedAt": {
           "type": "string",
           "format": "date-time",
           "description": "Property. Indicates the date/time of the DBS broadcast."
         },
-        "originatedByUnmannedAutonomousVehicle": {
+        "originatedByUnmannedAerialVehicle": {
           "type": "boolean",
           "description": "Property. A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV."
         },
@@ -65,7 +65,7 @@
           ],
           "description": "Relationship. Refers to a third party UAV instance or other entity (e.g. listening station) that reported the information in the case the message was not directly originated by the UAV."
         },
-        "UnmannedAutonomousVehicleADSBroadcast": {
+        "UnmannedAerialVehicleADSBroadcast": {
           "type": "string",
           "description": "Property. A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits."
         }
