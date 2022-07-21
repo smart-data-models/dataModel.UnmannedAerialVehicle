@@ -1,12 +1,14 @@
-Entité : UnmannedAerialVehicleADSB  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : UnmannedAerialVehicleADSB  
 ==================================  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Description globale : **Cette entité contient une description harmonisée d'un système générique de surveillance dépendante automatique des véhicules aériens sans pilote (UAV). Cette entité est principalement associée au contrôle et à la gestion des véhicules aériens sans pilote. Chaque instance UAVADSB sera liée à une instance UAV spécifique.  
+Description globale : **Cette entité contient une description harmonisée d'un système générique de surveillance dépendante automatique des véhicules aériens sans pilote (UAV). Cette entité est principalement associée au contrôle et à la gestion des véhicules aériens sans pilote. Chaque instance d'UAVADSB sera liée à une instance spécifique d'UAV**.  
+version : 0.1.0  
 
 ## Liste des propriétés  
 
-- `UnmannedAutonomousVehicleADSBroadcast`: Un message de vol décrivant l'état actuel du vol en tant que message DBSB stocké sous forme de chaîne de chiffres hexadécimaux.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `observedAt`: Indique la date et l'heure de la diffusion DBS.  - `originatedByUnmannedAutonomousVehicle`: Un indicateur logique de la source du message. Vrai indique qu'il s'agit de l'UAV lui-même, faux indique qu'il s'agit d'une source différente, une application logicielle de station d'écoute ou un UAV différent.  - `originator`: Désigne une instance tierce du drone ou une autre entité (par exemple, une station d'écoute) qui a transmis l'information dans le cas où le message n'a pas été directement émis par le drone.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Identifiant de l'entité NGSI. Il doit être UnmannedAutonomousVehicleADSB.  - `unmannedAutonomousVehicle`: Référence à l'entité Véhicule autonome sans pilote à laquelle se rapporte ce message de diffusion.    
+- `UnmannedAerialVehicle`: Référence à l'entité du véhicule aérien sans pilote à laquelle se rapporte ce message de diffusion.  - `UnmannedAerialVehicleADSBroadcast`: Un message de vol décrivant l'état actuel du vol en tant que message DBSB stocké sous forme de chaîne de chiffres hexadécimaux.  - `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `name`: Le nom de cet élément.  - `observedAt`: Indique la date et l'heure de la diffusion DBS.  - `originatedByUnmannedAerialVehicle`: Un indicateur logique de la source du message. Vrai indique qu'il s'agit de l'UAV lui-même, faux indique qu'il s'agit d'une source différente, une application logicielle de station d'écoute ou un UAV différent.  - `originator`: Désigne une instance tierce du drone ou une autre entité (par exemple, une station d'écoute) qui a transmis l'information dans le cas où le message n'a pas été directement émis par le drone.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Identifiant de l'entité NGSI. Il doit être UnmannedAerialVehicleADSB.    
 Propriétés requises  
 - `id`  - `type`    
 Ce modèle de données est issu du projet original GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Il y a quelques adaptations mineures pour répondre aux exigences des modèles de données intelligents.  
@@ -15,9 +17,22 @@ Entité : UnmannedAerialVehicleADSB
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleADSB:    
-  description: 'This entity contains a harmonised description of a generic UnmannedAutonomousVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.'    
+  description: 'This entity contains a harmonised description of a generic UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.'    
   properties:    
-    UnmannedAutonomousVehicleADSBroadcast:    
+    UnmannedAerialVehicle:    
+      anyOf:    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'Reference to the Unmanned Aerial Vehicle entity to which this broadcast message relates.'    
+      x-ngsi:    
+        type: Relationship    
+    UnmannedAerialVehicleADSBroadcast:    
       description: 'A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits.'    
       type: string    
       x-ngsi:    
@@ -257,7 +272,7 @@ UnmannedAerialVehicleADSB:
       type: string    
       x-ngsi:    
         type: Property    
-    originatedByUnmannedAutonomousVehicle:    
+    originatedByUnmannedAerialVehicle:    
       description: 'A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV.'    
       type: boolean    
       x-ngsi:    
@@ -301,25 +316,12 @@ UnmannedAerialVehicleADSB:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity identifier. It has to be UnmannedAutonomousVehicleADSB'    
+      description: 'NGSI Entity identifier. It has to be UnmannedAerialVehicleADSB'    
       enum:    
-        - UnmannedAutonomousVehicleADSB    
+        - UnmannedAerialVehicleADSB    
       type: string    
       x-ngsi:    
         type: Property    
-    unmannedAutonomousVehicle:    
-      anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          format: uri    
-          type: string    
-      description: 'Reference to the Unmanned Autonomous Vehicle entity to which this broadcast message relates.'    
-      x-ngsi:    
-        type: Relationship    
   required:    
     - id    
     - type    
@@ -327,9 +329,9 @@ UnmannedAerialVehicleADSB:
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/schema.json    
+  x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json    
   x-model-tags: GSMA    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## Exemples de charges utiles  
@@ -349,7 +351,7 @@ UnmannedAerialVehicleADSB:
 }  
 ```  
 #### UnmannedAerialVehicleADSB NGSI-v2 normalisé Exemple  
-Voici un exemple d'un UnmannedAerialVehicleADSB au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+Voici un exemple d'un UnmannedAerialVehicleADSB au format JSON-LD tel que normalisé. Ce format est compatible avec la NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
@@ -444,4 +446,4 @@ UnmannedAerialVehicleADSB:
   }  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
