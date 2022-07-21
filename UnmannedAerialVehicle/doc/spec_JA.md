@@ -1,17 +1,19 @@
-エンティティUnmannedAerialVehicle（無人航空機  
-=================================  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ無人航空機（UnmannedAerialVehicle）。  
+===================================  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicle/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、特定の無人航空機（UAV）に関する調和のとれた記述を含む。このエンティティは、主にUAVのコマンドとコントロール、および関連するUAV輸送アプリケーションに関連しています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**このエンティティは、特定の無人航空機（UAV）の調和された記述を含む。このエンティティは、主に UAV のコマンド＆コントロールおよび関連する UAV 輸送アプリケーションに関連するものである。  
+バージョン: 0.0.1  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `UnmannedAerialVehicleModel`: UAVをより詳細に説明するUAVモデル定義の参照。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `elevation`: UAVの標高（指定した場所の地上からの相対値）です。値と単位を指定します。  - `flightStatus`: これらを含む、UAVの飛行状態です。Enum:'stop, takeoff, flight, hover, land' (停止、離陸、飛行、ホバリング、着陸)  - `fuel`: UAVの現在の燃料搭載量。値と単位の指定  - `groundSpeed`: UAVの最新の対地速度の報告。値と単位の指定  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `observedAt`: 最新のモニタリングレポートまたはアップデートの日時を示す。  - `operationMode`: これらの値からの選択を説明するテキスト。Enum:'vlos, evlos, bvlos, automated'.注：記述はUTMフライトメッセージと一致する。  - `operator`: UAVのオペレーター（操作者）の詳細を示すリスト。1つまたは複数のSchema.org personまたはorganization.https://schema.org/Personhttps://schema.org/Organization を参照しています。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI Entity 識別子。UnmannedAerialVehicleでなければならない。  - `workStatus`: これらを含む、UAVの作業状況です。Enum:'停止、準備、作業、終了'    
-必須項目  
+- `UnmannedAerialVehicleModel`: UAVの詳細を記述したUAVモデルの定義を参照することができます。  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `elevation`: UAVの標高（指定位置の地上からの相対値）。数値と単位を指定する。  - `flightStatus`: これらを含むUAVの飛行状態。Enum:'stop, takeoff, flight, hover, land' （停止、離陸、飛行、ホバー、着陸  - `fuel`: UAVの現在の燃料搭載量。数値と単位を指定する  - `groundSpeed`: UAVの最新の対地速度です。値と単位を指定する  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `observedAt`: 最新のモニタリングレポートまたは更新の日付/時刻を示す。  - `operationMode`: これらの値から選択することを記述したテキスト。Enum:'vlos, evlos, bvlos, automated'.注：説明はUTMフライトメッセージと一致する。  - `operator`: UAVのオペレータまたはオペレータの詳細を示すリスト。1つ以上のSchema.orgのpersonまたはorganization.https://schema.org/Personhttps://schema.org/Organization を参照しています。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティ識別子。これはUnmannedAerialVehicleでなければならない。  - `workStatus`: これらを含む、UAVの作業状況。Enum:'停止, 準備, 作業, 終了'    
+必要なプロパティ  
 - `id`  - `type`    
-このデータモデルは、GSMAのIoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）の原型となるものです。スマートデータモデルの要件を満たすために、いくつかのマイナーな調整が行われています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+このデータモデルは、オリジナルのプロジェクトGSMA IoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）に由来しています。スマートデータモデルの要件を満たすために、若干の修正が加えられています。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicle:    
@@ -371,8 +373,8 @@ UnmannedAerialVehicle:
 ```  
 </details>    
 ## ペイロードの例  
-#### UnmannedAerialVehicle NGSI-v2 key-values 例  
-UnmannedAerialVehicleをJSON-LD形式のkey-valuesで表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UnmannedAerialVehicle NGSI-v2 key-value の例。  
+ここでは、UnmannedAerialVehicleをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "id": "urn:ngsi-ld:UAV:1fa179a6-b507-4857-ad72-eb5513ef05c6",  
@@ -406,7 +408,7 @@ UnmannedAerialVehicle:
 }  
 ```  
 #### UnmannedAerialVehicle NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のUnmannedAerialVehicleの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicle を JSON-LD 形式で正規化した例です。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:UAV:1fa179a6-b507-4857-ad72-eb5513ef05c6",  
@@ -481,8 +483,8 @@ UnmannedAerialVehicle:
   }  
 }  
 ```  
-#### UnmannedAerialVehicle NGSI-LDのキーバリューの例  
-UnmannedAerialVehicleをJSON-LD形式のkey-valuesで表現した例です。これは、`options=keyValues`を使った場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UnmannedAerialVehicle NGSI-LD key-value の例。  
+ここでは、UnmannedAerialVehicleをJSON-LD形式でkey-valuesにした例を示します。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "@context": [  
@@ -519,7 +521,7 @@ UnmannedAerialVehicle:
 }  
 ```  
 #### UnmannedAerialVehicle NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のUnmannedAerialVehicleの例を示します。これはオプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicle を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": [  
@@ -603,4 +605,4 @@ UnmannedAerialVehicle:
   }  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
