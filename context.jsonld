@@ -1,8 +1,8 @@
 {
     "@context": {
         "UnmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicle",
+        "UnmannedAerialVehicleADSBroadcast": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSBroadcast",
         "UnmannedAerialVehicleModel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleModel",
-        "UnmannedAutonomousVehicleADSBroadcast": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAutonomousVehicleADSBroadcast",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
@@ -46,6 +46,7 @@
         "operationMode": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operationMode",
         "operationalInstance": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operationalInstance",
         "operator": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operator",
+        "originatedByUnmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/originatedByUnmannedAerialVehicle",
         "originatedByUnmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/originatedByUnmannedAutonomousVehicle",
         "originator": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/originator",
         "owner": "https://smartdatamodels.org/owner",
@@ -59,7 +60,6 @@
         },
         "type": "@type",
         "unmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAerialVehicle",
-        "unmannedAutonomousVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAutonomousVehicle",
         "validationResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/validationResult",
         "workStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/workStatus"
     }
