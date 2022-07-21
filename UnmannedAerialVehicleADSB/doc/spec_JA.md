@@ -1,23 +1,38 @@
-エンティティUnmannedAerialVehicleADSB  
-===============================  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ無人航空機ADSB  
+===============  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、汎用のUnmannedAutonomousVehicle (UAV) Automatic Dependent Surveillance-Broadcastの調和された記述を含む。このエンティティは、主に無人航空機の制御と管理に関連しています。各UAVADSBインスタンスは、特定のUAVインスタンスに関連します。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+グローバルな記述。**このエンティティは、一般的な無人航空機（UAV）自動従属監視放送（Automatic Dependent Surveillance-Broadcast）の調和された記述を含んでいます。このエンティティは、主に無人航空機の制御と管理に関連する。各 UAVADSB インスタンスは、特定の UAV インスタンスに関連付けられます。  
+バージョン: 0.1.0  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `UnmannedAutonomousVehicleADSBroadcast`: 現在のフライト状況を表すフライトメッセージを、16進数の文字列として格納したDBSBメッセージ。  - `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `observedAt`: DBSの放送日時がわかる。  - `originatedByUnmannedAutonomousVehicle`: メッセージの発信元を示す論理的な指標。真はUAV自身であることを示し、偽は別のソース、リスニングステーションのソフトウェアアプリケーション、または別のUAVであることを示す。  - `originator`: メッセージがUAVから直接発信されていない場合に、情報を報告した第三者のUAVインスタンスまたは他のエンティティ（例：リスニングステーション）を指す。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI Entity 識別子。UnmannedAutonomousVehicleADSBでなければならない。  - `unmannedAutonomousVehicle`: このブロードキャストメッセージが関連するUnmanned Autonomous Vehicleのエンティティへの参照。    
-必須項目  
+- `UnmannedAerialVehicle`: この放送メッセージが関連する無人航空機のエンティティへの参照。  - `UnmannedAerialVehicleADSBroadcast`: 16進数の文字列として格納されたDBSB Messageとして、現在の飛行状況を記述したフライトメッセージ。  - `address`: 郵送先住所  - `alternateName`: この項目の別称  - `areaServed`: サービスまたは提供品が提供される地理的な地域  - `dataProvider`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description`: このアイテムの説明  - `id`: エンティティの一意な識別子  - `location`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name`: このアイテムの名称です。  - `observedAt`: DBS 放送の日時を示す。  - `originatedByUnmannedAerialVehicle`: メッセージの送信元を示す論理的な指標。TrueはUAV自身であることを示し、Falseは別のソース、リスニングステーションのソフトウェアアプリケーション、または別のUAVであることを示す。  - `originator`: メッセージがUAVから直接発信されたものではない場合、情報を報告した第三者のUAVインスタンスまたは他のエンティティ（リスニングステーションなど）を指します。  - `owner`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: 項目に関する追加リソースを指すURIのリスト。  - `source`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI エンティティ識別子。これは、UnmannedAerialVehicleADSB でなければならない。    
+必要なプロパティ  
 - `id`  - `type`    
-このデータモデルは、GSMAのIoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）の原型となるものです。スマートデータモデルの要件を満たすために、いくつかのマイナーな調整が行われています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+このデータモデルは、オリジナルのプロジェクトGSMA IoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）に由来しています。スマートデータモデルの要件を満たすために、若干の修正が加えられています。  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleADSB:    
-  description: 'This entity contains a harmonised description of a generic UnmannedAutonomousVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.'    
+  description: 'This entity contains a harmonised description of a generic UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.'    
   properties:    
-    UnmannedAutonomousVehicleADSBroadcast:    
+    UnmannedAerialVehicle:    
+      anyOf:    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          maxLength: 256    
+          minLength: 1    
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+          type: string    
+        - description: 'Property. Identifier format of any NGSI entity'    
+          format: uri    
+          type: string    
+      description: 'Reference to the Unmanned Aerial Vehicle entity to which this broadcast message relates.'    
+      x-ngsi:    
+        type: Relationship    
+    UnmannedAerialVehicleADSBroadcast:    
       description: 'A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits.'    
       type: string    
       x-ngsi:    
@@ -257,7 +272,7 @@ UnmannedAerialVehicleADSB:
       type: string    
       x-ngsi:    
         type: Property    
-    originatedByUnmannedAutonomousVehicle:    
+    originatedByUnmannedAerialVehicle:    
       description: 'A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV.'    
       type: boolean    
       x-ngsi:    
@@ -301,25 +316,12 @@ UnmannedAerialVehicleADSB:
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity identifier. It has to be UnmannedAutonomousVehicleADSB'    
+      description: 'NGSI Entity identifier. It has to be UnmannedAerialVehicleADSB'    
       enum:    
-        - UnmannedAutonomousVehicleADSB    
+        - UnmannedAerialVehicleADSB    
       type: string    
       x-ngsi:    
         type: Property    
-    unmannedAutonomousVehicle:    
-      anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          maxLength: 256    
-          minLength: 1    
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
-          type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
-          format: uri    
-          type: string    
-      description: 'Reference to the Unmanned Autonomous Vehicle entity to which this broadcast message relates.'    
-      x-ngsi:    
-        type: Relationship    
   required:    
     - id    
     - type    
@@ -327,14 +329,14 @@ UnmannedAerialVehicleADSB:
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md    
-  x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/schema.json    
+  x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json    
   x-model-tags: GSMA    
-  x-version: 0.0.1    
+  x-version: 0.1.0    
 ```  
 </details>    
 ## ペイロードの例  
-#### UnmannedAerialVehicleADSB NGSI-v2 key-values 例  
-UnmannedAerialVehicleADSBをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UnmannedAerialVehicleADSB NGSI-v2 key-value の例。  
+UnmannedAerialVehicleADSBをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
@@ -349,7 +351,7 @@ UnmannedAerialVehicleADSB:
 }  
 ```  
 #### UnmannedAerialVehicleADSB NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のUnmannedAerialVehicleADSBの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicleADSB を JSON-LD 形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
@@ -384,8 +386,8 @@ UnmannedAerialVehicleADSB:
   }  
 }  
 ```  
-#### UnmannedAerialVehicleADSB NGSI-LD キー・バリュー例  
-UnmannedAerialVehicleADSBをkey-valuesとしてJSON-LD形式で表現した例です。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UnmannedAerialVehicleADSB NGSI-LD key-value の例。  
+UnmannedAerialVehicleADSBをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
 ```json  
 {  
   "@context": [  
@@ -403,7 +405,7 @@ UnmannedAerialVehicleADSB:
 }  
 ```  
 #### UnmannedAerialVehicleADSB NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のUnmannedAerialVehicleADSBの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicleADSB を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
 ```json  
 {  
   "@context": [  
@@ -444,4 +446,4 @@ UnmannedAerialVehicleADSB:
   }  
 }  
 ```  
-マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。
+マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
