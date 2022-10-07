@@ -1,64 +1,65 @@
 {
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld"
-  ],
-  "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",
-  "type": "UnmannedAerialVehicleEvent",
-  "source": {
-    "type": "Property",
-    "value": "https://source.example.com"
-  },
-  "dataProvider": {
-    "type": "Property",
-    "value": "https://provider.example.com"
-  },
-  "UnmannedAerialVehicle": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
-  },
-  "originator": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
-  },
-  "location": {
-    "type": "GeoProperty",
-    "value": {
-      "type": "Point",
-      "coordinates": [
-        -103.9904,
-        39.7564
-      ]
+    "@context": [
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+    ],
+    "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",
+    "type": "UnmannedAerialVehicleEvent",
+    "source": {
+        "type": "Property",
+        "value": "https://source.example.com"
+    },
+    "dataProvider": {
+        "type": "Property",
+        "value": "https://provider.example.com"
+    },
+    "UnmannedAerialVehicle": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "originator": {
+        "type": "Relationship",
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    },
+    "location": {
+        "type": "GeoProperty",
+        "value": {
+            "type": "Point",
+            "coordinates": [
+                -103.9904,
+                39.7564
+            ]
+        }
+    },
+    "elevation": {
+        "type": "Property",
+        "value": 1000,
+        "unitCode": "MTR"
+    },
+    "startAt": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-08-23T10:18:16Z"
+        }
+    },
+    "endAt": {
+        "type": "Property",
+        "value": {
+            "@type": "DateTime",
+            "@value": "2016-08-23T10:19:16Z"
+        }
+    },
+    "eventType": {
+        "type": "Property",
+        "value": "overHeight"
+    },
+    "description": {
+        "type": "Property",
+        "value": "The Unmanned Aerial Vehicle is flying over a mandatory height limit"
+    },
+    "eventResult": {
+        "type": "Property",
+        "value": "forceBack"
     }
-  },
-  "elevation": {
-    "type": "Property",
-    "value": 1000,
-    "unitCode": "MTR"
-  },
-  "startAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2016-08-23T10:18:16Z"
-    }
-  },
-  "endAt": {
-    "type": "Property",
-    "value": {
-      "@type": "DateTime",
-      "@value": "2016-08-23T10:19:16Z"
-    }
-  },
-  "eventType": {
-    "type": "Property",
-    "value": "overHeight"
-  },
-  "description": {
-    "type": "Property",
-    "value": "The Unmanned Aerial Vehicle is flying over a mandatory height limit"
-  },
-  "eventResult": {
-    "type": "Property",
-    "value": "forceBack"
-  }
 }
