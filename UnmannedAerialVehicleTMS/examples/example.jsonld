@@ -1,25 +1,26 @@
 {
-  "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",
-  "type": "UAVUnmannedAerialVehicleTMS",
-  "source": "https://source.example.com",
-  "dataProvider": "https://provider.example.com",
-  "name": "PowerTMS",
-  "softwareApplication": {
-    "@type": "https://schema.org/SoftwareApplication",
-    "operatingSystem": "Linux",
-    "softwareVersion": "8.3",
-    "applicationCategory": "Guidance"
-  },
-  "operationalInstance": "http://example.com/uavtms",
-  "owner": [
-    "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
-    "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"
-  ],
-  "operator": [
-    "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
-    "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"
-  ],
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld"
-  ]
+    "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",
+    "type": "UAVUnmannedAerialVehicleTMS",
+    "source": "https://source.example.com",
+    "dataProvider": "https://provider.example.com",
+    "name": "PowerTMS",
+    "softwareApplication": {
+        "@type": "https://schema.org/SoftwareApplication",
+        "operatingSystem": "Linux",
+        "softwareVersion": "8.3",
+        "applicationCategory": "Guidance"
+    },
+    "operationalInstance": "http://example.com/uavtms",
+    "owner": [
+        "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
+        "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"
+    ],
+    "operator": [
+        "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
+        "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"
+    ],
+    "@context": [
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+    ]
 }
