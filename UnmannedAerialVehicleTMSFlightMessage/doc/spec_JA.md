@@ -1,16 +1,32 @@
-エンティティです。UnmannedAerialVehicleTMSFlightMessage  
-==============================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティUnmannedAerialVehicleTMSFlightMessage（無人航空機の飛行メッセージ  
+=========================================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMSFlightMessage/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、グローバルUTMアソシエーションプロトコルメッセージを含む、汎用のUAV UTMフライトメッセージの調和のとれた記述を含む。このエンティティは、主に無人航空機の制御と管理に関連している。各UnmannedAerialVehicleTMSFlightMessageインスタンスは、特定のUAVインスタンスに関連している**。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、グローバル UTM アソシエーションプロトコルメッセージを含む、汎用 UAV UTM フライトメッセージの調和された記述を含んでいます。このエンティティは、主に無人航空機の制御と管理に関連する。各UnmannedAerialVehicleTMSFlightMessageのインスタンスは、特定のUAVインスタンスに関連しています。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateObserved`: 注意：このフィールドはNGSIv2で使用するために定義され、現在は非推奨となっています。新しいエンティティやアプリケーションでは、**observedAt**と置き換えてください。  - `description`: このアイテムの説明  - `flightMessage`: JSONオブジェクトとしてエンコードされたGlobal UTM Messageとしてエンコードされた、現在のフライト状況を説明するフライトメッセージ https://bitbucket.org/global_utm/flight-declaration-protocol  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `observedAt`: UAVFlightMessageレコードの日付/時刻を示す。  - `originatedByUnmannedAutonomousVehicle`: メッセージの発信元を示す論理的な指標。真はUAV自身であることを示し、偽は別のソース、リスニングステーションのソフトウェアアプリケーション、または別のUAVであることを示す。  - `originator`: メッセージがUAVから直接発信されていない場合に、情報を報告した第三者のUAVインスタンスまたは他のエンティティ（例：リスニングステーション）を指す。  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI Entity 識別子。UnmannedAerialVehicleTMSFlightMessageでなければならない。  - `unmannedAerialVehicle`: このUAVFlightMessageに関連するUAVエンティティへの参照。    
-必須項目  
-このデータモデルは、GSMAのIoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）の原型となるものです。スマートデータモデルの要件を満たすために、いくつかのマイナーな調整が行われています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateObserved[string]`: このフィールドは NGSIv2 で使用するために定義され、現在では非推奨であることに注意。新しいエンティティやアプリケーションでは、**observedAt**に置き換える。  - `description[string]`: このアイテムの説明  - `flightMessage[object]`: 現在のフライト状況を記述したフライトメッセージ。JSON オブジェクトとしてエンコードされた Global UTM Message としてエンコードされている。https://bitbucket.org/global_utm/flight-declaration-protocol  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `observedAt[string]`: UAVFlightMessage レコードの日付/時刻を示す。  - `originatedByUnmannedAutonomousVehicle[boolean]`: メッセージの送信元を示す論理的な指標。TrueはUAV自身であることを示し、Falseは別のソース、リスニングステーションのソフトウェアアプリケーション、または別のUAVであることを示す。  - `originator[*]`: メッセージがUAVから直接発信されたものではない場合、情報を報告した第三者のUAVインスタンスまたは他のエンティティ（リスニングステーションなど）を指します。  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI エンティティ識別子。これは、UnmannedAerialVehicleTMSFlightMessage でなければならない。  - `unmannedAerialVehicle[*]`: この UAVFlightMessage が関連する UAV エンティティへの参照。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルのプロジェクトGSMA IoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）に由来しています。スマートデータモデルの要件を満たすために、若干の修正が加えられています。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleTMSFlightMessage:    
@@ -375,9 +391,14 @@ UnmannedAerialVehicleTMSFlightMessage:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### UnmannedAerialVehicleTMSFlightMessage NGSI-v2 key-values例  
-UnmannedAerialVehicleTMSFlightMessageをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UnmannedAerialVehicleTMSFlightMessage NGSI-v2 key-value 例．  
+以下は、UnmannedAerialVehicleTMSFlightMessageをJSON-LD形式でkey-valuesとした例である。これは、`options=keyValues`を使用した場合にNGSI-v2と互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
@@ -396,8 +417,10 @@ UnmannedAerialVehicleTMSFlightMessage:
   }  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMSFlightMessage NGSI-v2 正規化例  
-ここでは、正規化されたJSON-LD形式のUnmannedAerialVehicleTMSFlightMessageの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicleTMSFlightMessage を JSON-LD 形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
@@ -437,74 +460,88 @@ UnmannedAerialVehicleTMSFlightMessage:
   }  
 }  
 ```  
-#### UnmannedAerialVehicleTMSFlightMessage NGSI-LD key-values 例  
-UnmannedAerialVehicleTMSFlightMessageをkey-valuesとしてJSON-LD形式で表現した例を示します。これは、`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### UnmannedAerialVehicleTMSFlightMessage NGSI-LD key-value の例。  
+UnmannedAerialVehicleTMSFlightMessageをJSON-LD形式でkey-valuesとした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
-  "type": "UnmannedAerialVehicleTMSFlightMessage",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "unmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
-  "observedAt": "2016-08-23T10:18:16Z",  
-  "originatedByUnmannedAutonomousVehicle": false,  
-  "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",  
-  "flightMessage": {  
-    "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
-    "sequenceNumber": 0,  
-    "flightDeclaration": {},  
-    "version": "1.0.0"  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
+    "type": "UnmannedAerialVehicleTMSFlightMessage",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "unmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
+    "observedAt": "2016-08-23T10:18:16Z",  
+    "originatedByUnmannedAutonomousVehicle": false,  
+    "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",  
+    "flightMessage": {  
+        "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
+        "sequenceNumber": 0,  
+        "flightDeclaration": {},  
+        "version": "1.0.0"  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMSFlightMessage NGSI-LD 正規化例  
-ここでは、正規化されたJSON-LD形式のUnmannedAerialVehicleTMSFlightMessageの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicleTMSFlightMessage を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
-  "type": "UnmannedAerialVehicleTMSFlightMessage",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "unmannedAerialVehicle": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
-  },  
-  "observedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-23T10:18:16Z"  
-    }  
-  },  
-  "originatedByUnmannedAutonomousVehicle": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "originator": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"  
-  },  
-  "flightMessage": {  
-    "type": "Property",  
-    "value": {  
-      "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
-      "sequenceNumber": 0,  
-      "flightDeclaration": {},  
-      "version": "1.0.0"  
-    }  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
+    "type": "UnmannedAerialVehicleTMSFlightMessage",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "unmannedAerialVehicle": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
+    },  
+    "observedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-23T10:18:16Z"  
+        }  
+    },  
+    "originatedByUnmannedAutonomousVehicle": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "originator": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"  
+    },  
+    "flightMessage": {  
+        "type": "Property",  
+        "value": {  
+            "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
+            "sequenceNumber": 0,  
+            "flightDeclaration": {},  
+            "version": "1.0.0"  
+        }  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
