@@ -1,19 +1,32 @@
+<!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
 Entität: UnmannedAerialVehicleADSB  
-==================================  
+==================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Diese Einheit enthält eine harmonisierte Beschreibung eines generischen UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance-Broadcast. Diese Einheit ist in erster Linie mit der Kontrolle und dem Management von unbemannten Luftfahrzeugen verbunden. Jede UAVADSB-Instanz ist mit einer bestimmten UAV-Instanz verknüpft.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Diese Einheit enthält eine harmonisierte Beschreibung eines generischen UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance-Broadcast. Diese Einheit ist in erster Linie mit der Kontrolle und dem Management von unbemannten Luftfahrzeugen verbunden. Jede UAVADSB-Instanz ist mit einer bestimmten UAV-Instanz verbunden.**  
 Version: 0.1.0  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `UnmannedAerialVehicle`: Verweis auf die unbemannte Luftfahrzeug-Einheit, auf die sich diese Broadcast-Nachricht bezieht.  - `UnmannedAerialVehicleADSBroadcast`: Eine Flugmeldung, die den aktuellen Flugstatus als DBSB-Meldung beschreibt und als Zeichenkette aus Hexadezimalziffern gespeichert wird.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `observedAt`: Gibt das Datum und die Uhrzeit der DBS-Sendung an.  - `originatedByUnmannedAerialVehicle`: Ein logischer Indikator für die Quelle der Nachricht. True bedeutet, dass es sich um das UAV selbst handelt, false bedeutet, dass es sich um eine andere Quelle, eine Softwareanwendung der Abhörstation oder ein anderes UAV handelt.  - `originator`: Bezieht sich auf eine dritte UAV-Instanz oder eine andere Einheit (z. B. eine Abhörstation), die die Informationen gemeldet hat, falls die Nachricht nicht direkt von der UAV stammt.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type`: NGSI-Kennung der Entität. Er muss UnmannedAerialVehicleADSB lauten.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, liegt das daran, dass es mehrere Typen oder unterschiedliche Formate/Muster haben kann</sub></sup>.  
+- `UnmannedAerialVehicle[*]`: Verweis auf die unbemannte Luftfahrzeug-Einheit, auf die sich diese Broadcast-Nachricht bezieht.  - `UnmannedAerialVehicleADSBroadcast[string]`: Eine Flugmeldung, die den aktuellen Flugstatus als DBSB-Meldung beschreibt und als Zeichenkette aus Hexadezimalziffern gespeichert wird.  - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `observedAt[string]`: Gibt das Datum und die Uhrzeit der DBS-Sendung an.  - `originatedByUnmannedAerialVehicle[boolean]`: Ein logischer Indikator für die Quelle der Nachricht. True bedeutet, dass es sich um das UAV selbst handelt, false bedeutet, dass es sich um eine andere Quelle, eine Softwareanwendung der Abhörstation oder ein anderes UAV handelt.  - `originator[*]`: Bezieht sich auf eine dritte UAV-Instanz oder eine andere Einheit (z. B. eine Abhörstation), die die Informationen gemeldet hat, falls die Nachricht nicht direkt von der UAV stammt.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Es wird empfohlen, den voll qualifizierten Domänennamen des Quellanbieters oder die URL des Quellobjekts zu verwenden.  - `type[string]`: NGSI-Kennung der Entität. Er muss UnmannedAerialVehicleADSB lauten.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen GSMA IoT-Projekt, https://www.gsma.com/iot/iot-big-data/. Es wurden einige kleinere Anpassungen vorgenommen, um den Anforderungen intelligenter Datenmodelle zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleADSB:    
@@ -334,9 +347,14 @@ UnmannedAerialVehicleADSB:
   x-version: 0.1.0    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### UnmannedAerialVehicleADSB NGSI-v2 key-values Beispiel  
-Hier ist ein Beispiel für ein UnmannedAerialVehicleADSB im JSON-LD-Format als Schlüsselwerte. Dies ist kompatibel mit NGSI-v2, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein UnmannedAerialVehicleADSB im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
@@ -350,8 +368,10 @@ UnmannedAerialVehicleADSB:
   "UnmannedAutonomousVehicleADSBroadcast": "8D4840D6202CC371C32CE0576098"  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleADSB NGSI-v2 normalisiert Beispiel  
 Hier ist ein Beispiel für ein UnmannedAerialVehicleADSB im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
@@ -386,64 +406,78 @@ UnmannedAerialVehicleADSB:
   }  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleADSB NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für ein UnmannedAerialVehicleADSB im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
-  "type": "UnmannedAutonomousVehicleADSB",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "unmannedAutonomousVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
-  "observedAt": "2016-08-23T10:18:16Z",  
-  "originatedByUnmannedAutonomousVehicle": false,  
-  "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",  
-  "UnmannedAutonomousVehicleADSBroadcast": "8D4840D6202CC371C32CE0576098"  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
+    "type": "UnmannedAutonomousVehicleADSB",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "unmannedAutonomousVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
+    "observedAt": "2016-08-23T10:18:16Z",  
+    "originatedByUnmannedAutonomousVehicle": false,  
+    "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",  
+    "UnmannedAutonomousVehicleADSBroadcast": "8D4840D6202CC371C32CE0576098"  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleADSB NGSI-LD normalisiert Beispiel  
 Hier ist ein Beispiel für ein UnmannedAerialVehicleADSB im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
-  "type": "UnmannedAutonomousVehicleADSB",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "unmannedAutonomousVehicle": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
-  },  
-  "observedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-23T10:18:16Z"  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
+    "type": "UnmannedAutonomousVehicleADSB",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "unmannedAutonomousVehicle": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
+    },  
+    "observedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-23T10:18:16Z"  
+        }  
+    },  
+    "originatedByUnmannedAutonomousVehicle": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "originator": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"  
+    },  
+    "UnmannedAutonomousVehicleADSBroadcast": {  
+        "type": "Property",  
+        "value": "8D4840D6202CC371C32CE0576098"  
     }  
-  },  
-  "originatedByUnmannedAutonomousVehicle": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "originator": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"  
-  },  
-  "UnmannedAutonomousVehicleADSBroadcast": {  
-    "type": "Property",  
-    "value": "8D4840D6202CC371C32CE0576098"  
-  }  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
