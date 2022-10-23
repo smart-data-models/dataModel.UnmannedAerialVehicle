@@ -1,16 +1,32 @@
-Entità: UnmannedAerialVehicleTMSFlightMessage  
-=============================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entità: UnmannedAerialVehicleTMSFlightMessage  
+=============================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licenza aperta](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMSFlightMessage/LICENSE.md)  
 [documento generato automaticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Descrizione globale: **Questa entità contiene una descrizione armonizzata di un generico messaggio di volo UTM UAV, che contiene un messaggio di protocollo di associazione UTM globale. Questa entità è principalmente associata al controllo e alla gestione dei veicoli aerei senza equipaggio. Ogni istanza di UnmannedAerialVehicleTMSFlightMessage è legata ad una specifica istanza UAV.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Descrizione globale: **Questa entità contiene una descrizione armonizzata di un generico messaggio di volo UAV UTM, che contiene un messaggio di protocollo di associazione UTM globale. Questa entità è associata principalmente al controllo e alla gestione dei veicoli aerei senza pilota. Ogni istanza di UnmannedAerialVehicleTMSFlightMessage è correlata a una specifica istanza UAV.**  
+versione: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Elenco delle proprietà  
 
-- `address`: L'indirizzo postale  - `alternateName`: Un nome alternativo per questa voce  - `areaServed`: L'area geografica in cui viene fornito un servizio o un articolo offerto  - `dataProvider`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated`: Timestamp di creazione dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateModified`: Timestamp dell'ultima modifica dell'entità. Questo sarà di solito assegnato dalla piattaforma di archiviazione.  - `dateObserved`: Indica la data/ora in cui l'osservazione è stata registrata. Si noti che questo campo è stato definito per l'uso con NGSIv2 ed è ora deprecato. Per le nuove entità e applicazioni sostituire con **observedAt**  - `description`: Una descrizione di questo articolo  - `flightMessage`: Un messaggio di volo che descrive lo stato attuale del volo codificato come un messaggio UTM globale codificato come un oggetto JSON. https://bitbucket.org/global_utm/flight-declaration-protocol  - `id`: Identificatore unico dell'entità  - `location`: Riferimento Geojson all'elemento. Può essere Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: Il nome di questo articolo.  - `observedAt`: Indica la data/ora del record UAVFlightMessage.  - `originatedByUnmannedAutonomousVehicle`: Un indicatore logico della fonte del messaggio. True indica che è l'UAV stesso, false indica che è una fonte diversa, un'applicazione software della stazione d'ascolto o un altro UAV.  - `originator`: Si riferisce a un'istanza UAV terza o a un'altra entità (per esempio una stazione di ascolto) che ha riportato l'informazione nel caso in cui il messaggio non sia stato originato direttamente dall'UAV.  - `owner`: Una lista contenente una sequenza di caratteri codificata in JSON che si riferisce agli ID unici dei proprietari  - `seeAlso`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source`: Una sequenza di caratteri che dà la fonte originale dei dati dell'entità come URL. Si raccomanda di essere il nome di dominio completamente qualificato del fornitore di origine, o l'URL dell'oggetto di origine.  - `type`: Identificatore di entità NGSI. Deve essere UnmannedAerialVehicleTMSFlightMessage  - `unmannedAerialVehicle`: Riferimento all'entità UAV a cui questo UAVFlightMessage si riferisce.    
+<sup><sub>[*] Se non c'è un tipo in un attributo è perché potrebbe avere diversi tipi o diversi formati/modelli</sub></sup>.  
+- `address[object]`: L'indirizzo postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nome alternativo per questa voce  - `areaServed[string]`: L'area geografica in cui viene fornito il servizio o l'articolo offerto.  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una sequenza di caratteri che identifica il fornitore dell'entità di dati armonizzata.  - `dateCreated[string]`: Timestamp di creazione dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateModified[string]`: Timestamp dell'ultima modifica dell'entità. Di solito viene assegnato dalla piattaforma di archiviazione.  - `dateObserved[string]`: Indica la data/ora in cui è stata registrata l'osservazione. Si noti che questo campo è stato definito per l'uso con NGSIv2 ed è ora deprecato. Per le nuove entità e applicazioni, sostituire con **observedAt**.  - `description[string]`: Descrizione dell'articolo  - `flightMessage[object]`: Un messaggio di volo che descrive lo stato attuale del volo codificato come messaggio UTM globale codificato come oggetto JSON. https://bitbucket.org/global_utm/flight-declaration-protocol  - `id[*]`: Identificatore univoco dell'entità  - `location[*]`: Riferimento Geojson all'elemento. Può essere un punto, una stringa di linea, un poligono, un multi-punto, una stringa di linea o un poligono multiplo.  - `name[string]`: Il nome di questo elemento.  - `observedAt[string]`: Indica la data/ora del record UAVFlightMessage.  - `originatedByUnmannedAutonomousVehicle[boolean]`: Indicatore logico della fonte del messaggio. Vero indica che si tratta dell'UAV stesso, falso indica che si tratta di una fonte diversa, un'applicazione software della stazione di ascolto o un UAV diverso.  - `originator[*]`: Si riferisce a un'istanza UAV di terze parti o a un'altra entità (ad esempio, una stazione di ascolto) che ha riportato l'informazione nel caso in cui il messaggio non sia stato originato direttamente dall'UAV.  - `owner[array]`: Un elenco contenente una sequenza di caratteri codificata JSON che fa riferimento agli ID univoci dei proprietari.  - `seeAlso[*]`: elenco di uri che puntano a risorse aggiuntive sull'elemento  - `source[string]`: Una sequenza di caratteri che indica la fonte originale dei dati dell'entità come URL. Si consiglia di utilizzare il nome di dominio completamente qualificato del provider di origine o l'URL dell'oggetto di origine.  - `type[string]`: Identificatore dell'entità NGSI. Deve essere UnmannedAerialVehicleTMSFlightMessage.  - `unmannedAerialVehicle[*]`: Riferimento all'entità UAV a cui si riferisce questo UAVFlightMessage.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Proprietà richieste  
-Questo modello di dati proviene dal progetto originale GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Ci sono alcuni adattamenti minori per soddisfare i requisiti dei modelli di dati intelligenti.  
-## Descrizione del modello di dati delle proprietà  
+<!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+Questo modello di dati deriva dal progetto originale GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Sono stati apportati alcuni piccoli adattamenti per soddisfare i requisiti dei modelli di dati intelligenti.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## Modello di dati descrizione delle proprietà  
 Ordinati in ordine alfabetico (clicca per i dettagli)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleTMSFlightMessage:    
@@ -375,9 +391,14 @@ UnmannedAerialVehicleTMSFlightMessage:
   x-version: 0.0.1    
 ```  
 </details>    
-## Esempio di payloads  
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
+## Esempi di payload  
 #### UnmannedAerialVehicleTMSFlightMessage Valori chiave NGSI-v2 Esempio  
-Ecco un esempio di un UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-v2 quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
@@ -396,8 +417,10 @@ UnmannedAerialVehicleTMSFlightMessage:
   }  
 }  
 ```  
-#### UnmannedAerialVehicleTMSFlightMessage NGSI-v2 normalizzato Esempio  
-Ecco un esempio di un UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### UnmannedAerialVehicleTMSFlightMessage Esempio normalizzato NGSI-v2  
+Ecco un esempio di UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD normalizzato. Questo è compatibile con NGSI-v2 quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
@@ -437,74 +460,88 @@ UnmannedAerialVehicleTMSFlightMessage:
   }  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMSFlightMessage Valori chiave NGSI-LD Esempio  
-Ecco un esempio di un UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD come valori chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+Ecco un esempio di UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD come valori-chiave. Questo è compatibile con NGSI-LD quando si usa `options=keyValues` e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
-  "type": "UnmannedAerialVehicleTMSFlightMessage",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "unmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
-  "observedAt": "2016-08-23T10:18:16Z",  
-  "originatedByUnmannedAutonomousVehicle": false,  
-  "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",  
-  "flightMessage": {  
-    "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
-    "sequenceNumber": 0,  
-    "flightDeclaration": {},  
-    "version": "1.0.0"  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
+    "type": "UnmannedAerialVehicleTMSFlightMessage",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "unmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
+    "observedAt": "2016-08-23T10:18:16Z",  
+    "originatedByUnmannedAutonomousVehicle": false,  
+    "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",  
+    "flightMessage": {  
+        "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
+        "sequenceNumber": 0,  
+        "flightDeclaration": {},  
+        "version": "1.0.0"  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ]  
 }  
 ```  
-#### UnmannedAerialVehicleTMSFlightMessage NGSI-LD normalizzato Esempio  
-Ecco un esempio di un UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non usa opzioni e restituisce i dati di contesto di una singola entità.  
+</details>  
+#### UnmannedAerialVehicleTMSFlightMessage Esempio normalizzato NGSI-LD  
+Ecco un esempio di UnmannedAerialVehicleTMSFlightMessage in formato JSON-LD normalizzato. Questo è compatibile con NGSI-LD quando non si utilizzano opzioni e restituisce i dati di contesto di una singola entità.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
-  "type": "UnmannedAerialVehicleTMSFlightMessage",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "unmannedAerialVehicle": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
-  },  
-  "observedAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-23T10:18:16Z"  
-    }  
-  },  
-  "originatedByUnmannedAutonomousVehicle": {  
-    "type": "Property",  
-    "value": false  
-  },  
-  "originator": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"  
-  },  
-  "flightMessage": {  
-    "type": "Property",  
-    "value": {  
-      "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
-      "sequenceNumber": 0,  
-      "flightDeclaration": {},  
-      "version": "1.0.0"  
-    }  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:UAVUTMFlightMessage:4de63bda-592c-11e8-a603-234826e9b9fe",  
+    "type": "UnmannedAerialVehicleTMSFlightMessage",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "unmannedAerialVehicle": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
+    },  
+    "observedAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-23T10:18:16Z"  
+        }  
+    },  
+    "originatedByUnmannedAutonomousVehicle": {  
+        "type": "Property",  
+        "value": false  
+    },  
+    "originator": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"  
+    },  
+    "flightMessage": {  
+        "type": "Property",  
+        "value": {  
+            "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",  
+            "sequenceNumber": 0,  
+            "flightDeclaration": {},  
+            "version": "1.0.0"  
+        }  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ]  
 }  
 ```  
-Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per avere una risposta su come trattare le unità di grandezza  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Vedere [FAQ 10](https://smartdatamodels.org/index.php/faqs/) per ottenere una risposta su come gestire le unità di grandezza.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
