@@ -1,17 +1,32 @@
-エンティティUnmannedAerialVehicleTMS  
-==============================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+エンティティ無人航空機TMS  
+==============<!-- /10-Header -->  
+<!-- 15-License -->  
 [オープンライセンス](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMS/LICENSE.md)  
-[document generated automatically](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-グローバルな記述。**このエンティティは、UAVから送信される情報を聞き取り、監視するために設計された特定の無人航空機（UAV）トラフィック管理ソフトウェアアプリケーションの調和された記述を含んでいます。このエンティティは、主にUAVのコマンド＆コントロールアプリケーションに関連しています。  
+[ドキュメント自動生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+グローバルな記述。**このエンティティは、UAV から送信される情報を聴取し監視するために設計された、特定の無人航空機 (UAV) トラフィック管理ソフトウェアアプリケーションの調和された記述を含んでいる。このエンティティは、主にUAVのコマンドおよび制御アプリケーションに関連しています**。  
+バージョン: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
-## プロパティのリスト  
+## プロパティ一覧  
 
-- `address`: 郵送先住所  - `alternateName`: このアイテムの別称  - `areaServed`: サービスや提供されるアイテムが提供される地理的なエリア  - `dataProvider`: 調和されたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified`: エンティティが最後に変更された時のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `description`: このアイテムの説明  - `id`: エンティティのユニークな識別子  - `location`: アイテムへのGeojson参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygonのいずれかです。  - `name`: このアイテムの名前です。  - `operationalInstance`: UAV交通管理ソフトウェアの運用インスタンス（ウェブベースを想定）にリンクするURL。  - `operator`: UAVのオペレーター（操作者）の詳細を示すリストです。1人以上のSchema.orgの人物または組織を参照しています。https://schema.org/Person または https://schema.org/Organization  - `owner`: オーナーのIDを参照するJSONエンコードされた文字列を含むリスト  - `seeAlso`: アイテムに関する追加リソースを示すuriのリスト  - `softwareApplication`:   - `source`: エンティティデータのオリジナルソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type`: NGSI Entity 識別子。UnmannedAerialVehicleTMSでなければならない。    
-必須項目  
-- `id`  - `required`    
-このデータモデルは、GSMAのIoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）の原型となるものです。スマートデータモデルの要件を満たすために、いくつかのマイナーな調整が行われています。  
-## データモデルによるプロパティの記述  
-アルファベット順（クリックすると詳細が表示されます）  
+<sup><sub>[*] 属性にタイプがない場合、複数のタイプまたは異なるフォーマット/パターンを持つ可能性があるためです</sub></sup>。  
+- `address[object]`: 郵送先住所  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: この項目の別称  - `areaServed[string]`: サービスまたは提供品が提供される地理的な地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 調和されたデータエンティティの提供者を識別する一連の文字。  - `dateCreated[string]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `dateModified[string]`: エンティティの最終更新のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: このアイテムの説明  - `id[*]`: エンティティの一意な識別子  - `location[*]`: アイテムへの Geojson リファレンス。Point, LineString, Polygon, MultiPoint, MultiLineString, MultiPolygonのいずれかを指定することができる。  - `name[string]`: このアイテムの名称です。  - `operationalInstance[string]`: UAV交通管理ソフトウェアの運用インスタンス（Webベースと仮定）へのリンクURL。  - `operator[array]`: UAV のオペレータまたはオペレータの詳細を示すリスト。1つ以上のSchema.orgの人物または組織を参照する。https://schema.org/Person または https://schema.org/Organization  - `owner[array]`: 所有者の一意のIDを参照するJSONエンコードされた文字列を含むリストです。  - `seeAlso[*]`: 項目に関する追加リソースを指すURIのリスト。  - `softwareApplication[object]`:   . Model: [Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication](Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication)- `source[string]`: エンティティデータの元のソースをURLで示す一連の文字。ソースプロバイダの完全修飾ドメイン名、またはソースオブジェクトのURLであることが推奨されます。  - `type[string]`: NGSI エンティティ識別子。これは、UnmannedAerialVehicleTMS でなければならない。  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
+必要なプロパティ  
+- `id`  - `required`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
+このデータモデルは、オリジナルのプロジェクトGSMA IoTプロジェクト（https://www.gsma.com/iot/iot-big-data/）に由来しています。スマートデータモデルの要件を満たすために、若干の修正が加えられています。  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
+## プロパティのデータモデル記述  
+アルファベット順に並びます（クリックで詳細へ）  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleTMS:    
@@ -317,9 +332,14 @@ UnmannedAerialVehicleTMS:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## ペイロードの例  
-#### UnmannedAerialVehicleTMS NGSI-v2 key-values 例  
-UnmannedAerialVehicleTMSをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使用した場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+#### UnmannedAerialVehicleTMS NGSI-v2 key-value の例。  
+ここでは、UnmannedAerialVehicleTMSをJSON-LD形式でkey-valuesとした例を示す。これは、`options=keyValues`を使用した場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返す。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
@@ -344,8 +364,10 @@ UnmannedAerialVehicleTMS:
   ]  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMS NGSI-v2 正規化例  
-正常化されたJSON-LD形式のUnmannedAerialVehicleTMSの例を示します。これは、オプションを使用しない場合のNGSI-v2との互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicleTMS を JSON-LD 形式で正規化した例を示す。これは、オプションを使用しない場合、NGSI-v2と互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
@@ -391,83 +413,97 @@ UnmannedAerialVehicleTMS:
   }  
 }  
 ```  
-#### UnmannedAerialVehicleTMS NGSI-LD キーバリュー例  
-UnmannedAerialVehicleTMSをkey-valuesとしてJSON-LD形式で表現した例です。これは`options=keyValues`を使用した場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+</details>  
+#### UnmannedAerialVehicleTMS NGSI-LD key-value の例。  
+UnmannedAerialVehicleTMSをJSON-LD形式でkey-valuesにした例です。これは、`options=keyValues`を使用した場合にNGSI-LDと互換性があり、個々のエンティティのコンテキストデータが返される。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
-  "type": "UAVUnmannedAerialVehicleTMS",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "name": "PowerTMS",  
-  "softwareApplication": {  
-    "@type": "https://schema.org/SoftwareApplication",  
-    "operatingSystem": "Linux",  
-    "softwareVersion": "8.3",  
-    "applicationCategory": "Guidance"  
-  },  
-  "operationalInstance": "http://example.com/uavtms",  
-  "owner": [  
-    "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-    "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
-  ],  
-  "operator": [  
-    "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-    "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
-  ],  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
+    "type": "UAVUnmannedAerialVehicleTMS",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "name": "PowerTMS",  
+    "softwareApplication": {  
+        "@type": "https://schema.org/SoftwareApplication",  
+        "operatingSystem": "Linux",  
+        "softwareVersion": "8.3",  
+        "applicationCategory": "Guidance"  
+    },  
+    "operationalInstance": "http://example.com/uavtms",  
+    "owner": [  
+        "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+        "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
+    ],  
+    "operator": [  
+        "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+        "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
+    ],  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMS NGSI-LD 正規化例  
-正規化されたJSON-LD形式のUnmannedAerialVehicleTMSの例を示します。これは、オプションを使用しない場合のNGSI-LDとの互換性があり、個々のエンティティのコンテキストデータを返します。  
+UnmannedAerialVehicleTMS を JSON-LD 形式で正規化した例を示す。これはオプションを使用しない場合、NGSI-LDと互換性があり、個々のエンティティのコンテキストデータを返します。  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
-  "type": "UAVUnmannedAerialVehicleTMS",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "PowerTMS"  
-  },  
-  "softwareApplication": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "https://schema.org/SoftwareApplication",  
-      "operatingSystem": "Linux",  
-      "softwareVersion": "8.3",  
-      "applicationCategory": "Guidance"  
-    }  
-  },  
-  "operationalInstance": {  
-    "type": "Property",  
-    "value": "http://example.com/uavtms"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-      "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
+    "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
+    "type": "UAVUnmannedAerialVehicleTMS",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "PowerTMS"  
+    },  
+    "softwareApplication": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "https://schema.org/SoftwareApplication",  
+            "operatingSystem": "Linux",  
+            "softwareVersion": "8.3",  
+            "applicationCategory": "Guidance"  
+        }  
+    },  
+    "operationalInstance": {  
+        "type": "Property",  
+        "value": "http://example.com/uavtms"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+            "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
+        ]  
+    },  
+    "operator": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+            "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
+        ]  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
     ]  
-  },  
-  "operator": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-      "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
-    ]  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 マグニチュード単位の扱いについては、[FAQ 10](https://smartdatamodels.org/index.php/faqs/)を参照してください。  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
