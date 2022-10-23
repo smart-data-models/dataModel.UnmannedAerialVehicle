@@ -1,17 +1,32 @@
-Entität: UnmannedAerialVehicleEvent  
-===================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entität: UnmannedAerialVehicleEvent  
+===================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Offene Lizenz](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleEvent/LICENSE.md)  
 [Dokument automatisch generiert](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
-Globale Beschreibung: **Das UAVEvent zeichnet das Eindringen einer bestimmten Drohne in oder in die Nähe von geschütztem Luftraum oder Orten auf. Es zeichnet auch die ergriffene Kontrollmaßnahme auf. Diese Entität ist in erster Linie mit UAV-Kommando und -Kontrolle und damit verbundenen UAV-Transportanwendungen verbunden.**  
+<!-- /15-License -->  
+<!-- 20-Description -->  
+Globale Beschreibung: **Das UAVEvent zeichnet das Eindringen einer bestimmten Drohne in oder in die Nähe von geschütztem Luftraum oder Orten auf. Es zeichnet auch die ergriffene Kontrollmaßnahme auf. Diese Entität wird in erster Linie mit UAV-Kommando und -Kontrolle und damit verbundenen UAV-Transportanwendungen in Verbindung gebracht.**  
+Version: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste der Eigenschaften  
 
-- `UnmannedAerialVehicle`: Verweis auf die UnmannedAerialVehicle-Einheit, auf die sich dieses Ereignis bezieht.  - `address`: Die Postanschrift  - `alternateName`: Ein alternativer Name für diesen Artikel  - `areaServed`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  - `dataProvider`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description`: Eine Beschreibung dieses Artikels  - `elevation`: Die Höhe des UAV (relativ zum Boden am angegebenen Standort). Geben Sie den Wert und die Maßeinheiten an.  - `endAt`: Gibt das Datum/die Uhrzeit an, zu der das Ereignis beendet wurde (falls es beendet wurde).  - `eventResult`: Das Ergebnis der Behandlung des Ereignisses, eine Auswahl aus dieser Liste, Enum:'logged, notify, alarm, forceLand, forceBack, forceHover'  - `eventType`: Der Typ des UAV-Ereignisses, eine Auswahl aus der Liste. Enum:'illegalFlight, closeToUnpermittedAirspace, overSpeed, overHeight, illegalWork'  - `id`: Eindeutiger Bezeichner der Entität  - `location`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name`: Der Name dieses Artikels.  - `originator`: Bezieht sich auf eine dritte UAV-Instanz oder eine andere Einheit (z. B. eine Abhörstation), die die Informationen gemeldet hat, falls das Ereignis nicht direkt von der UAV stammt.  - `owner`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der vollständig qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startAt`: Zeigt das Datum/die Uhrzeit an, zu der das Ereignis begann.  - `type`: NGSI-Kennung der Entität. Er muss UnmannedAerialVehicleEvent lauten.    
+<sup><sub>[*] Wenn es für ein Attribut keinen Typ gibt, kann es mehrere Typen oder verschiedene Formate/Muster haben</sub></sup>.  
+- `UnmannedAerialVehicle[*]`: Verweis auf die UnmannedAerialVehicle-Einheit, auf die sich dieses Ereignis bezieht.  - `address[object]`: Die Postanschrift  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit.  - `dateCreated[string]`: Zeitstempel der Entitätserstellung. Dieser wird in der Regel von der Speicherplattform zugewiesen.  - `dateModified[string]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben.  - `description[string]`: Eine Beschreibung dieses Artikels  - `elevation[number]`: Die Höhe des UAV (relativ zum Boden am angegebenen Standort). Geben Sie den Wert und die Maßeinheiten an.  - `endAt[string]`: Gibt das Datum/die Uhrzeit an, zu der das Ereignis beendet wurde (falls es beendet wurde).  - `eventResult[string]`: Das Ergebnis der Behandlung des Ereignisses, eine Auswahl aus dieser Liste, Enum:'logged, notify, alarm, forceLand, forceBack, forceHover'  - `eventType[string]`: Der Typ des UAV-Ereignisses, eine Auswahl aus der Liste. Enum:'illegalFlight, closeToUnpermittedAirspace, overSpeed, overHeight, illegalWork'  - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels.  - `originator[*]`: Bezieht sich auf eine dritte UAV-Instanz oder eine andere Einheit (z. B. eine Abhörstation), die die Informationen gemeldet hat, falls das Ereignis nicht direkt von der UAV stammt.  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `startAt[string]`: Zeigt das Datum/die Uhrzeit an, zu der das Ereignis begann.  - `type[string]`: NGSI-Kennung der Entität. Er muss UnmannedAerialVehicleEvent lauten.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Dieses Datenmodell stammt aus dem ursprünglichen GSMA IoT-Projekt, https://www.gsma.com/iot/iot-big-data/. Es wurden einige kleinere Anpassungen vorgenommen, um den Anforderungen intelligenter Datenmodelle zu entsprechen.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Datenmodell Beschreibung der Eigenschaften  
 Alphabetisch sortiert (für Details anklicken)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleEvent:    
@@ -356,9 +371,14 @@ UnmannedAerialVehicleEvent:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Beispiel-Nutzlasten  
 #### UnmannedAerialVehicleEvent NGSI-v2 key-values Beispiel  
 Hier ist ein Beispiel für ein UnmannedAerialVehicleEvent im JSON-LD-Format als Schlüsselwerte. Dies ist mit NGSI-v2 kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",  
@@ -382,8 +402,10 @@ UnmannedAerialVehicleEvent:
   "eventResult": "forceBack"  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleEvent NGSI-v2 normalisiert Beispiel  
-Hier ist ein Beispiel für ein UnmannedAerialVehicleEvent im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-v2 kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein UnmannedAerialVehicleEvent im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-v2, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",  
@@ -440,100 +462,114 @@ UnmannedAerialVehicleEvent:
   }  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleEvent NGSI-LD key-values Beispiel  
 Hier ist ein Beispiel für ein UnmannedAerialVehicleEvent im JSON-LD-Format als Key-Values. Dies ist mit NGSI-LD kompatibel, wenn `options=keyValues` verwendet wird und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",  
-  "type": "UnmannedAerialVehicleEvent",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "UnmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
-  "originator": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
-  "location": {  
-    "type": "Point",  
-    "coordinates": [  
-      -103.9904,  
-      39.7564  
-    ]  
-  },  
-  "elevation": 1000,  
-  "startAt": "2016-08-23T10:18:16Z",  
-  "endAt": "2016-08-23T10:19:16Z",  
-  "eventType": "overHeight",  
-  "description": "The UAV is flying over a mandatory height limit",  
-  "eventResult": "forceBack"  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",  
+    "type": "UnmannedAerialVehicleEvent",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "UnmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
+    "originator": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
+    "location": {  
+        "type": "Point",  
+        "coordinates": [  
+            -103.9904,  
+            39.7564  
+        ]  
+    },  
+    "elevation": 1000,  
+    "startAt": "2016-08-23T10:18:16Z",  
+    "endAt": "2016-08-23T10:19:16Z",  
+    "eventType": "overHeight",  
+    "description": "The UAV is flying over a mandatory height limit",  
+    "eventResult": "forceBack"  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleEvent NGSI-LD normalisiert Beispiel  
-Hier ist ein Beispiel für ein UnmannedAerialVehicleEvent im JSON-LD-Format in normalisierter Form. Dies ist kompatibel mit NGSI-LD, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+Hier ist ein Beispiel für ein UnmannedAerialVehicleEvent im JSON-LD-Format in normalisierter Form. Dies ist mit NGSI-LD kompatibel, wenn keine Optionen verwendet werden, und liefert die Kontextdaten einer einzelnen Entität.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",  
-  "type": "UnmannedAerialVehicleEvent",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "UnmannedAerialVehicle": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
-  },  
-  "originator": {  
-    "type": "Relationship",  
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
-  },  
-  "location": {  
-    "type": "GeoProperty",  
-    "value": {  
-      "type": "Point",  
-      "coordinates": [  
-        -103.9904,  
-        39.7564  
-      ]  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",  
+    "type": "UnmannedAerialVehicleEvent",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "UnmannedAerialVehicle": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
+    },  
+    "originator": {  
+        "type": "Relationship",  
+        "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"  
+    },  
+    "location": {  
+        "type": "GeoProperty",  
+        "value": {  
+            "type": "Point",  
+            "coordinates": [  
+                -103.9904,  
+                39.7564  
+            ]  
+        }  
+    },  
+    "elevation": {  
+        "type": "Property",  
+        "value": 1000,  
+        "unitCode": "MTR"  
+    },  
+    "startAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-23T10:18:16Z"  
+        }  
+    },  
+    "endAt": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "DateTime",  
+            "@value": "2016-08-23T10:19:16Z"  
+        }  
+    },  
+    "eventType": {  
+        "type": "Property",  
+        "value": "overHeight"  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "The Unmanned Aerial Vehicle is flying over a mandatory height limit"  
+    },  
+    "eventResult": {  
+        "type": "Property",  
+        "value": "forceBack"  
     }  
-  },  
-  "elevation": {  
-    "type": "Property",  
-    "value": 1000,  
-    "unitCode": "MTR"  
-  },  
-  "startAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-23T10:18:16Z"  
-    }  
-  },  
-  "endAt": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "DateTime",  
-      "@value": "2016-08-23T10:19:16Z"  
-    }  
-  },  
-  "eventType": {  
-    "type": "Property",  
-    "value": "overHeight"  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "The Unmanned Aerial Vehicle is flying over a mandatory height limit"  
-  },  
-  "eventResult": {  
-    "type": "Property",  
-    "value": "forceBack"  
-  }  
 }  
 ```  
-Siehe [FAQ 10](https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Siehe [FAQ 10] (https://smartdatamodels.org/index.php/faqs/), um eine Antwort auf die Frage zu erhalten, wie man mit Größeneinheiten umgeht  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
