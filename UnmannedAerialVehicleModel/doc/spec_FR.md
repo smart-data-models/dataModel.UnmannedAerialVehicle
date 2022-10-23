@@ -1,17 +1,32 @@
-Entité : UnmannedAerialVehicleModel  
-===================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entité : UnmannedAerialVehicleModel  
+===================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licence ouverte] (https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleModel/LICENSE.md)  
 [document généré automatiquement] (https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Description globale : **Cette entité contient une description harmonisée d'un modèle générique de véhicule aérien sans pilote (UAV) et est applicable à la commande et au contrôle des UAV et aux applications connexes de transport d'UAV**.  
+version : 0.0.2  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
-- `address`: L'adresse postale  - `alternateName`: Un nom alternatif pour cet élément  - `areaServed`: La zone géographique où un service ou un article offert est fourni  - `brandName`: Une description de la marque de ce modèle de véhicule aérien sans pilote.  - `categoryUAV`: La catégorie de travail de l'UAVModel. Un choix dans la liste suivante : 'aerialPhotography, plantProtection, industry, routingInspection, mailing, transportation'.  - `dataProvider`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description`: Une description de cet article  - `documentation`: Référence URI (URL/URN) à la fiche technique du produit ou à toute autre documentation du fabricant concernant ce modèle de véhicule aérien sans pilote.  - `fuelType`: Le type de carburant alimentant l'UAVModel. Un choix dans une liste énumérée décrivant la source d'énergie. Enum : 'gasoline, petrol(unleaded), petrol(leaded), petrol, diesel, electricité, hydrogen, lpg autogas, cng, biodiesel, ethanol, hybride electric/petrol, hybride electric/diesel, other'  - `id`: Identifiant unique de l'entité  - `location`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `manufacturerName`: Le nom du fabricant de ce modèle de véhicule aérien sans pilote.  - `maxFlightAltitude`: L'altitude de vol maximale du modèle de véhicule aérien sans pilote au-dessus du sol. Précisez la valeur et les unités de mesure.  - `maxFlightTime`: La durée maximale de vol du modèle de véhicule aérien sans pilote avec le plein de carburant et sans charge. Précisez la valeur et les unités de mesure.  - `maxGroundVelocity`: La vitesse maximale au sol du modèle de véhicule aérien sans pilote (dans des conditions de vent calme). Précisez la valeur et les unités de mesure.  - `maxLoad`: La charge maximale que le véhicule aérien sans pilote est autorisé à transporter. Précisez la valeur et les unités de mesure.  - `minUnladenWeight`: Le poids du véhicule aérien sans pilote avec le plein de carburant mais sans charge. Précisez la valeur et les unités de mesure.  - `minWeight`: Le poids du drone sans carburant ni charge. Précisez la valeur et les unités de mesure.  - `model`: L'identifiant du modèle de drone, qui peut être un modèle de véhicule aérien sans pilote.  - `name`: Le nom de cet élément.  - `owner`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rotors`: Le nombre de rotors du modèle de véhicule aérien sans pilote.  - `seeAlso`: liste d'uri pointant vers des ressources supplémentaires sur l'élément  - `source`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type`: Identifiant de l'entité NGSI. Il doit être UnmannedAerialVehicle.    
+<sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il pourrait avoir plusieurs types ou différents formats/modèles</sub></sup>.  
+- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nom alternatif pour cet élément  - `areaServed[string]`: La zone géographique où un service ou un article offert est fourni  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Une description de la marque de ce modèle de véhicule aérien sans pilote.  - `categoryUAV[string]`: La catégorie de travail de l'UAVModel. Un choix dans la liste suivante : 'aerialPhotography, plantProtection, industry, routingInspection, mailing, transportation'.  - `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées.  - `dateCreated[string]`: Horodatage de la création de l'entité. Celui-ci sera généralement attribué par la plateforme de stockage.  - `dateModified[string]`: Horodatage de la dernière modification de l'entité. Il sera généralement attribué par la plateforme de stockage.  - `description[string]`: Une description de cet article  - `documentation[string]`: Référence URI (URL/URN) à la fiche technique du produit ou à toute autre documentation du fabricant concernant ce modèle de véhicule aérien sans pilote.  - `fuelType[string]`: Le type de carburant alimentant l'UAVModel. Un choix dans une liste énumérée décrivant la source d'énergie. Enum : 'gasoline, petrol(unleaded), petrol(leaded), petrol, diesel, electricité, hydrogen, lpg autogas, cng, biodiesel, ethanol, hybride electric/petrol, hybride electric/diesel, other'  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une ligne, d'un polygone, d'un point multiple, d'une ligne multiple ou d'un polygone multiple.  - `manufacturerName[string]`: Le nom du fabricant de ce modèle de véhicule aérien sans pilote.  - `maxFlightAltitude[number]`: L'altitude de vol maximale du modèle de véhicule aérien sans pilote au-dessus du sol. Précisez la valeur et les unités de mesure.  - `maxFlightTime[number]`: La durée maximale de vol du modèle de véhicule aérien sans pilote avec le plein de carburant et sans charge. Précisez la valeur et les unités de mesure.  - `maxGroundVelocity[number]`: La vitesse maximale au sol du modèle de véhicule aérien sans pilote (dans des conditions de vent calme). Précisez la valeur et les unités de mesure.  - `maxLoad[number]`: La charge maximale que le véhicule aérien sans pilote est autorisé à transporter. Précisez la valeur et les unités de mesure.  - `minUnladenWeight[number]`: Le poids du véhicule aérien sans pilote avec le plein de carburant mais sans charge. Précisez la valeur et les unités de mesure.  - `minWeight[number]`: Le poids du drone sans carburant ni charge. Précisez la valeur et les unités de mesure.  - `model[string]`: L'identifiant du modèle de drone, qui peut être un modèle de véhicule aérien sans pilote.  - `name[string]`: Le nom de cet élément.  - `owner[array]`: Une liste contenant une séquence de caractères codée en JSON référençant les identifiants uniques du ou des propriétaires.  - `rotors[number]`: Le nombre de rotors du modèle de véhicule aérien sans pilote.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires sur l'article  - `source[string]`: Une séquence de caractères donnant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine entièrement qualifié du fournisseur source ou l'URL de l'objet source.  - `type[string]`: Identifiant de l'entité NGSI. Il doit être UnmannedAerialVehicle.  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propriétés requises  
-- `id`  - `type`    
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Ce modèle de données est issu du projet original GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Il y a quelques adaptations mineures pour répondre aux exigences des modèles de données intelligents.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Description des propriétés du modèle de données  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleModel:    
@@ -377,9 +392,14 @@ UnmannedAerialVehicleModel:
   x-version: 0.0.2    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Exemples de charges utiles  
 #### UnmannedAerialVehicleModel Valeurs-clés NGSI-v2 Exemple  
 Voici un exemple d'un UnmannedAerialVehicleModel au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-v2 lorsque l'on utilise `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",  
@@ -402,8 +422,10 @@ UnmannedAerialVehicleModel:
   "maxLoad": 0.8  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleModel NGSI-v2 normalisé Exemple  
 Voici un exemple d'un UnmannedAerialVehicleModel au format JSON-LD tel que normalisé. Ce format est compatible avec la norme NGSI-v2 lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",  
@@ -473,115 +495,129 @@ UnmannedAerialVehicleModel:
   }  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleModel Valeurs-clés NGSI-LD Exemple  
 Voici un exemple d'un UnmannedAerialVehicleModel au format JSON-LD en tant que valeurs-clés. Ceci est compatible avec NGSI-LD en utilisant `options=keyValues` et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicleModel/UnmannedAerialVehicleModel/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",  
-  "type": "UnmannedAerialVehicleModel",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "model": "ACME Recon",  
-  "documentation": "http://example.com/products-services/aircraft/the-recon.html",  
-  "description": "The Recon was constructed and designed to offer a clear payload view, with the motor and propeller system aft of the payload. It is smaller and more versatile than many drones, yet robust enough for harsh environment operations. The wingspan is 2.3 meters. An affordable, versatile, and flexible drone for a multitude of uses.",  
-  "manufacturerName": "ACME UAVs",  
-  "brandName": "Airv",  
-  "categoryUAV": "aerialPhotography",  
-  "rotors": 4,  
-  "fuelType": "gasoline",  
-  "maxFlightTime": 100,  
-  "maxFlightAltitude": 1000,  
-  "maxGroundVelocity": 100,  
-  "minWeight": 1,  
-  "minUnladenWeight": 1.5,  
-  "maxLoad": 0.8  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicleModel/UnmannedAerialVehicleModel/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",  
+    "type": "UnmannedAerialVehicleModel",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "model": "ACME Recon",  
+    "documentation": "http://example.com/products-services/aircraft/the-recon.html",  
+    "description": "The Recon was constructed and designed to offer a clear payload view, with the motor and propeller system aft of the payload. It is smaller and more versatile than many drones, yet robust enough for harsh environment operations. The wingspan is 2.3 meters. An affordable, versatile, and flexible drone for a multitude of uses.",  
+    "manufacturerName": "ACME UAVs",  
+    "brandName": "Airv",  
+    "categoryUAV": "aerialPhotography",  
+    "rotors": 4,  
+    "fuelType": "gasoline",  
+    "maxFlightTime": 100,  
+    "maxFlightAltitude": 1000,  
+    "maxGroundVelocity": 100,  
+    "minWeight": 1,  
+    "minUnladenWeight": 1.5,  
+    "maxLoad": 0.8  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleModel NGSI-LD normalisé Exemple  
 Voici un exemple d'un UnmannedAerialVehicleModel au format JSON-LD tel que normalisé. Ce format est compatible avec NGSI-LD lorsqu'il n'utilise pas d'options et renvoie les données contextuelles d'une entité individuelle.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicleModel/UnmannedAerialVehicleModel/context.jsonld"  
-  ],  
-  "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",  
-  "type": "UnmannedAerialVehicleModel",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "model": {  
-    "type": "Property",  
-    "value": "ACME Recon"  
-  },  
-  "documentation": {  
-    "type": "Property",  
-    "value": {  
-      "@value": "http://example.com/products-services/aircraft/the-recon.html",  
-      "@type": "https://schema.org/url"  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicleModel/UnmannedAerialVehicleModel/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ],  
+    "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",  
+    "type": "UnmannedAerialVehicleModel",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "model": {  
+        "type": "Property",  
+        "value": "ACME Recon"  
+    },  
+    "documentation": {  
+        "type": "Property",  
+        "value": {  
+            "@value": "http://example.com/products-services/aircraft/the-recon.html",  
+            "@type": "https://schema.org/url"  
+        }  
+    },  
+    "description": {  
+        "type": "Property",  
+        "value": "The Recon was constructed and designed to offer a clear payload view, with the motor and propeller system aft of the payload. It is smaller and more versatile than many drones, yet robust enough for harsh environment operations. The wingspan is 2.3 meters. An affordable, versatile, and flexible drone for a multitude of uses."  
+    },  
+    "manufacturerName": {  
+        "type": "Property",  
+        "value": "ACME UAVs"  
+    },  
+    "brandName": {  
+        "type": "Property",  
+        "value": "Airv"  
+    },  
+    "categoryUAV": {  
+        "type": "Property",  
+        "value": "aerialPhotography"  
+    },  
+    "rotors": {  
+        "type": "Property",  
+        "value": 4  
+    },  
+    "fuelType": {  
+        "type": "Property",  
+        "value": "gasoline"  
+    },  
+    "maxFlightTime": {  
+        "type": "Property",  
+        "value": 100,  
+        "unitCode": "HUR"  
+    },  
+    "maxFlightAltitude": {  
+        "type": "Property",  
+        "value": 1000,  
+        "unitCode": "MTR"  
+    },  
+    "maxGroundVelocity": {  
+        "type": "Property",  
+        "value": 100,  
+        "unitCode": "MTS"  
+    },  
+    "minWeight": {  
+        "type": "Property",  
+        "value": 1,  
+        "unitCode": "KGM"  
+    },  
+    "minUnladenWeight": {  
+        "type": "Property",  
+        "value": 1.5,  
+        "unitCode": "KGM"  
+    },  
+    "maxLoad": {  
+        "type": "Property",  
+        "value": 0.8,  
+        "unitCode": "KGM"  
     }  
-  },  
-  "description": {  
-    "type": "Property",  
-    "value": "The Recon was constructed and designed to offer a clear payload view, with the motor and propeller system aft of the payload. It is smaller and more versatile than many drones, yet robust enough for harsh environment operations. The wingspan is 2.3 meters. An affordable, versatile, and flexible drone for a multitude of uses."  
-  },  
-  "manufacturerName": {  
-    "type": "Property",  
-    "value": "ACME UAVs"  
-  },  
-  "brandName": {  
-    "type": "Property",  
-    "value": "Airv"  
-  },  
-  "categoryUAV": {  
-    "type": "Property",  
-    "value": "aerialPhotography"  
-  },  
-  "rotors": {  
-    "type": "Property",  
-    "value": 4  
-  },  
-  "fuelType": {  
-    "type": "Property",  
-    "value": "gasoline"  
-  },  
-  "maxFlightTime": {  
-    "type": "Property",  
-    "value": 100,  
-    "unitCode": "HUR"  
-  },  
-  "maxFlightAltitude": {  
-    "type": "Property",  
-    "value": 1000,  
-    "unitCode": "MTR"  
-  },  
-  "maxGroundVelocity": {  
-    "type": "Property",  
-    "value": 100,  
-    "unitCode": "MTS"  
-  },  
-  "minWeight": {  
-    "type": "Property",  
-    "value": 1,  
-    "unitCode": "KGM"  
-  },  
-  "minUnladenWeight": {  
-    "type": "Property",  
-    "value": 1.5,  
-    "unitCode": "KGM"  
-  },  
-  "maxLoad": {  
-    "type": "Property",  
-    "value": 0.8,  
-    "unitCode": "KGM"  
-  }  
 }  
 ```  
-Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
+Voir [FAQ 10](https://smartdatamodels.org/index.php/faqs/) pour obtenir une réponse sur la façon de traiter les unités de magnitude.  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
