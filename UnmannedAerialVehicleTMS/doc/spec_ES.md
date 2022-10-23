@@ -1,17 +1,32 @@
-Entidad: UnmannedAerialVehicleTMS  
-=================================  
+<!-- 10-Header -->  
+[![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
+Entidad: UnmannedAerialVehicleTMS  
+=================================<!-- /10-Header -->  
+<!-- 15-License -->  
 [Licencia abierta](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMS/LICENSE.md)  
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
+<!-- /15-License -->  
+<!-- 20-Description -->  
 Descripción global: **Esta entidad contiene una descripción armonizada de una aplicación de software específica de gestión del tráfico de vehículos aéreos no tripulados (UAV) que está diseñada para escuchar y supervisar la información transmitida por los UAV, normalmente esta aplicación de software sería operada en una estación de tierra. Esta entidad se asocia principalmente a las aplicaciones de mando y control de los vehículos aéreos no tripulados.**  
+versión: 0.0.1  
+<!-- /20-Description -->  
+<!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-- `address`: La dirección postal  - `alternateName`: Un nombre alternativo para este artículo  - `areaServed`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  - `dataProvider`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description`: Una descripción de este artículo  - `id`: Identificador único de la entidad  - `location`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name`: El nombre de este artículo.  - `operationalInstance`: URL que enlaza con una instancia operativa (se supone que está basada en la web) para el software de gestión del tráfico de vehículos aéreos no tripulados.  - `operator`: Una lista que detalla el operador u operadores del UAV. Hace referencia a una o varias personas u organizaciones de Schema.org.https://schema.org/Person o https://schema.org/Organization  - `owner`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `softwareApplication`:   - `source`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen, o la URL del objeto de origen.  - `type`: Identificador de la entidad NGSI. Debe ser UnmannedAerialVehicleTMS    
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `name[string]`: El nombre de este artículo.  - `operationalInstance[string]`: URL que enlaza con una instancia operativa (se supone que está basada en la web) para el software de gestión del tráfico de vehículos aéreos no tripulados.  - `operator[array]`: Una lista que detalla el operador u operadores del UAV. Hace referencia a una o varias personas u organizaciones de Schema.org.https://schema.org/Person o https://schema.org/Organization  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `softwareApplication[object]`:   . Model: [Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication](Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication)- `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Identificador de la entidad NGSI. Debe ser UnmannedAerialVehicleTMS  <!-- /30-PropertiesList -->  
+<!-- 35-RequiredProperties -->  
 Propiedades requeridas  
-- `id`  - `required`    
+- `id`  - `required`  <!-- /35-RequiredProperties -->  
+<!-- 40-RequiredProperties -->  
 Este modelo de datos procede del proyecto original de GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Hay algunas adaptaciones menores para cumplir los requisitos de los modelos de datos inteligentes.  
+<!-- /40-RequiredProperties -->  
+<!-- 50-DataModelHeader -->  
 ## Descripción del modelo de datos de las propiedades  
 Ordenados alfabéticamente (haga clic para ver los detalles)  
+<!-- /50-DataModelHeader -->  
+<!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleTMS:    
@@ -317,9 +332,14 @@ UnmannedAerialVehicleTMS:
   x-version: 0.0.1    
 ```  
 </details>    
+<!-- /60-ModelYaml -->  
+<!-- 70-MiddleNotes -->  
+<!-- /70-MiddleNotes -->  
+<!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### UnmannedAerialVehicleTMS NGSI-v2 key-values Ejemplo  
 Aquí hay un ejemplo de un UnmannedAerialVehicleTMS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
@@ -344,8 +364,10 @@ UnmannedAerialVehicleTMS:
   ]  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMS NGSI-v2 normalizado Ejemplo  
 Este es un ejemplo de un UnmannedAerialVehicleTMS en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
   "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
@@ -391,83 +413,97 @@ UnmannedAerialVehicleTMS:
   }  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMS NGSI-LD key-values Ejemplo  
 Aquí hay un ejemplo de un UnmannedAerialVehicleTMS en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
-  "type": "UAVUnmannedAerialVehicleTMS",  
-  "source": "https://source.example.com",  
-  "dataProvider": "https://provider.example.com",  
-  "name": "PowerTMS",  
-  "softwareApplication": {  
-    "@type": "https://schema.org/SoftwareApplication",  
-    "operatingSystem": "Linux",  
-    "softwareVersion": "8.3",  
-    "applicationCategory": "Guidance"  
-  },  
-  "operationalInstance": "http://example.com/uavtms",  
-  "owner": [  
-    "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-    "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
-  ],  
-  "operator": [  
-    "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-    "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
-  ],  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld"  
-  ]  
+    "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
+    "type": "UAVUnmannedAerialVehicleTMS",  
+    "source": "https://source.example.com",  
+    "dataProvider": "https://provider.example.com",  
+    "name": "PowerTMS",  
+    "softwareApplication": {  
+        "@type": "https://schema.org/SoftwareApplication",  
+        "operatingSystem": "Linux",  
+        "softwareVersion": "8.3",  
+        "applicationCategory": "Guidance"  
+    },  
+    "operationalInstance": "http://example.com/uavtms",  
+    "owner": [  
+        "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+        "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
+    ],  
+    "operator": [  
+        "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+        "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
+    ],  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+    ]  
 }  
 ```  
+</details>  
 #### UnmannedAerialVehicleTMS NGSI-LD normalizado Ejemplo  
 Este es un ejemplo de un UnmannedAerialVehicleTMS en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+<details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
-  "type": "UAVUnmannedAerialVehicleTMS",  
-  "source": {  
-    "type": "Property",  
-    "value": "https://source.example.com"  
-  },  
-  "dataProvider": {  
-    "type": "Property",  
-    "value": "https://provider.example.com"  
-  },  
-  "name": {  
-    "type": "Property",  
-    "value": "PowerTMS"  
-  },  
-  "softwareApplication": {  
-    "type": "Property",  
-    "value": {  
-      "@type": "https://schema.org/SoftwareApplication",  
-      "operatingSystem": "Linux",  
-      "softwareVersion": "8.3",  
-      "applicationCategory": "Guidance"  
-    }  
-  },  
-  "operationalInstance": {  
-    "type": "Property",  
-    "value": "http://example.com/uavtms"  
-  },  
-  "owner": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-      "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
+    "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",  
+    "type": "UAVUnmannedAerialVehicleTMS",  
+    "source": {  
+        "type": "Property",  
+        "value": "https://source.example.com"  
+    },  
+    "dataProvider": {  
+        "type": "Property",  
+        "value": "https://provider.example.com"  
+    },  
+    "name": {  
+        "type": "Property",  
+        "value": "PowerTMS"  
+    },  
+    "softwareApplication": {  
+        "type": "Property",  
+        "value": {  
+            "@type": "https://schema.org/SoftwareApplication",  
+            "operatingSystem": "Linux",  
+            "softwareVersion": "8.3",  
+            "applicationCategory": "Guidance"  
+        }  
+    },  
+    "operationalInstance": {  
+        "type": "Property",  
+        "value": "http://example.com/uavtms"  
+    },  
+    "owner": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+            "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"  
+        ]  
+    },  
+    "operator": {  
+        "type": "Property",  
+        "value": [  
+            "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
+            "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
+        ]  
+    },  
+    "@context": [  
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",  
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
     ]  
-  },  
-  "operator": {  
-    "type": "Property",  
-    "value": [  
-      "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",  
-      "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"  
-    ]  
-  },  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld"  
-  ]  
 }  
 ```  
+</details><!-- /80-Examples -->  
+<!-- 90-FooterNotes -->  
+<!-- /90-FooterNotes -->  
+<!-- 95-Units -->  
 Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+<!-- /95-Units -->  
+<!-- 97-LastFooter -->  
+---  
+[Smart Data Models](https://smartdatamodels.org) +++ [Contribution Manual](https://bit.ly/contribution_manual) +++ [About](https://bit.ly/Introduction_SDM)<!-- /97-LastFooter -->  
