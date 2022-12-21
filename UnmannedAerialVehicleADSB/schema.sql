@@ -1,0 +1,3 @@
+/* (Beta) Export of data model UnmannedAerialVehicleADSB of the subject dataModel.UnmannedAerialVehicle for a postgreSQL database. Pending translation of enumerations and multityped attributes */
+CREATE TYPE UnmannedAerialVehicleADSB_type AS ENUM ('UnmannedAerialVehicleADSB');
+CREATE TABLE UnmannedAerialVehicleADSB (UnmannedAerialVehicle text, UnmannedAerialVehicleADSBroadcast text, address json, alternateName text, areaServed text, dataProvider text, dateCreated timestamp, dateModified timestamp, description text, id text, location json, name text, observedAt timestamp, originatedByUnmannedAerialVehicle text, originator text, owner json, seeAlso json, source text, type UnmannedAerialVehicleADSB_type);
