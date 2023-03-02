@@ -1,8 +1,13 @@
 {
     "@context": {
         "UnmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicle",
+        "UnmannedAerialVehicleADSB": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB",
         "UnmannedAerialVehicleADSBroadcast": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSBroadcast",
+        "UnmannedAerialVehicleEvent": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent",
         "UnmannedAerialVehicleModel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleModel",
+        "UnmannedAerialVehicleTMS": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMS",
+        "UnmannedAerialVehicleTMSFlightMessage": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage",
+        "UnmannedAerialVehicleTMSFlightMessageAgent": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessageAgent",
         "address": "https://smartdatamodels.org/address",
         "alternateName": "https://smartdatamodels.org/alternateName",
         "areaServed": "https://smartdatamodels.org/areaServed",
