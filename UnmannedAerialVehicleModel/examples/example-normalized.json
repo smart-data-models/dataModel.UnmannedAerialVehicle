@@ -38,11 +38,12 @@
     "value": 4
   },
   "fuelType": {
-    "type": "Number",
+    "type": "Text",
     "value": "gasoline"
   },
   "maxFlightTime": {
-    "type": "Number"
+    "type": "Number",
+    "value": 100
   },
   "maxFlightAltitude": {
     "type": "Number",
@@ -65,4 +66,3 @@
     "value": 0.8
   }
 }
-
