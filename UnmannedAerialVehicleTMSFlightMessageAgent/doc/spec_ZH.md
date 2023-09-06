@@ -1,97 +1,135 @@
 <!-- 10-Header -->  
 [![Smart Data Models](https://smartdatamodels.org/wp-content/uploads/2022/01/SmartDataModels_logo.png "Logo")](https://smartdatamodels.org)  
-实体。无人机TMSFlightMessageAgent  
-===========================<!-- /10-Header -->  
+实体：无人驾驶飞行器 TMSFlightMessageAgent  
+================================<!-- /10-Header -->  
 <!-- 15-License -->  
 [开放许可](https://github.com/smart-data-models//dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMSFlightMessageAgent/LICENSE.md)  
 [文件自动生成](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-全球描述。**本实体包含对通用无人机UTM飞行报文代理的统一描述，该代理旨在根据特定无人机实体订阅全球UTM协会协议报文。该实体支持服务提供者确认UTM飞行报文实体产生的UTM飞行报文的有效性的功能。服务提供商可以在原始的UTM飞行报文中加入自己的飞行控制策略，并将其转发给UAVTMS实体**。  
-版本：0.0.1  
+全球描述：**该实体包含通用无人机UTM 飞行信息代理的统一描述，旨在根据特定无人机实体订阅全球 UTM 关联协议信息。该实体支持服务提供商确认由 UTM Flight Message Entity 生成的 UTM Flight Message 有效性的功能。服务提供商可在原始 UTM 飞行信息中加入自己的飞行控制策略，并将其转发给 UAVTMS 实体**。  
+版本： 0.0.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
-##属性列表  
+## 属性列表  
 
-<sup><sub>[*] 如果一个属性中没有一个类型，是因为它可能有几种类型或不同的格式/模式</sub></sup>。  
-- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: 这个项目的一个替代名称  - `areaServed[string]`: 提供服务或提供项目的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 一串识别统一数据实体提供者的字符。  - `dateCreated[string]`: 实体创建时间戳。这通常会由存储平台分配。  - `dateModified[string]`: 实体最后一次修改的时间戳。这通常会由存储平台分配。  - `description[string]`: 对这个项目的描述  - `flightControlPolicy[string]`: 表示由服务提供者生成的飞行控制策略。该数据可以作为文本值包含，也可以通过URI（URL/URN）引用到以JSON或XML格式定义的策略。  - `flightMessage[object]`: 描述当前飞行状态的飞行信息，被编码为全球UTM信息，被编码为JSON对象。https://bitbucket.org/global_utm/flight-declaration-protocol  - `id[*]`: 实体的唯一标识符  - `location[*]`: 对该项目的Geojson引用。它可以是点、线字符串、多边形、多点、多线字符串或多多边形。  - `name[string]`: 这个项目的名称。  - `observedAt[string]`: 表示UAVUTMFlightMessageAgent记录的日期/时间。  - `originatedByUnmannedAutonomousVehicle[boolean]`: 信息来源的一个逻辑指标。真表示是无人机本身，假表示是不同的来源，一个监听站软件应用或不同的无人机。  - `originator[*]`: 指第三方无人机实例或其他实体（如监听站），在信息不是直接由无人机发出的情况下，报告该信息。  - `owner[array]`: 一个包含JSON编码的字符序列的列表，引用所有者的唯一Ids。  - `seeAlso[*]`: 指向有关该项目的其他资源的URI列表  - `source[string]`: 一系列的字符，以URL的形式给出实体数据的原始来源。建议为源提供者的完全合格域名，或源对象的URL。  - `type[string]`: NGSI实体标识符。它必须是UnmannedAerialVehicleTMSFlightMessageAgent。  - `unmannedAerialVehicle[*]`: 对该UAVUTMFlightMessageAgent相关的无人机实体的引用。  - `validationResult[boolean]`: 信息验证的一个逻辑指标。真表示验证被确认，假表示验证确认失败。  <!-- /30-PropertiesList -->  
+<sup><sub>[*] 如果属性中没有类型，是因为它可能有多个类型或不同的格式/模式</sub></sup>。  
+- `address[object]`: 邮寄地址  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: 国家。例如，西班牙  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: 街道地址所在的地点，以及该地点所在的区域  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: 地点所在的地区，以及该地区位于哪个国家  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: 地区是一种行政区划，在一些国家由地方政府管理    
+	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `flightControlPolicy[string]`: 表示服务提供商生成的飞行控制策略。该数据可作为文本值，或通过 URI（URL/URN）引用到以 JSON 或 XML 格式定义的策略中。  - `flightMessage[object]`: 描述当前航班状态的航班信息，以全球UTM 信息的形式编码为一个 JSON 对象。 https://bitbucket.org/global_utm/flight-declaration-protocol  	- `flightDeclaration`:     
+	- `flightId`:     
+	- `sequenceNumber`:     
+- `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `observedAt[date-time]`: 表示 UAVUTMFlightMessageAgent 记录的日期/时间  - `originatedByUnmannedAerialVehicle[boolean]`: 信息来源的逻辑指标。真表示是无人机本身，假表示是另一个来源、监听站软件应用程序或不同的无人机  - `originator[*]`: 在信息并非由无人机直接发出的情况下，指报告信息的第三方无人机实例或其他实体（如监听站）。  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 实体标识符。必须是 UnmannedAerialVehicleTMSFlightMessageAgent。  - `unmannedAerialVehicle[*]`: 与 UAVUTMFlightMessageAgent 相关的 UAV 实体的引用  - `validationResult[boolean]`: 邮件验证的逻辑指标。真表示验证已确认，假表示验证确认失败  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
 - `id`  - `required`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-这个数据模型来自原始项目GSMA物联网项目，https://www.gsma.com/iot/iot-big-data/。有一些小的调整，以满足智能数据模型的要求。  
+该数据模型来自 GSMA 物联网项目的原始项目 https://www.gsma.com/iot/iot-big-data/。为满足智能数据模型的要求，本数据模型略有改动。  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## 数据模型的属性描述  
-按字母顺序排列（点击查看详情）。  
+## 属性的数据模型描述  
+按字母顺序排列（点击查看详情）  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleTMSFlightMessageAgent:    
-  description: 'This entity contains a harmonised description of a generic UAV UTM Flight Message Agent that is designed to subscribe to the Global UTM Association protocol message according to a specific UAV entity. This entity supports the functionality of a service provider to confirm the validity of UTM Flight Message generated by UTM Flight Message Entity. The service provider can include their own Flight Control Policy to the original UTM Flight Message and forward this to a UAVTMS entity.'    
+  description: This entity contains a harmonised description of a generic UAV UTM Flight Message Agent that is designed to subscribe to the Global UTM Association protocol message according to a specific UAV entity. This entity supports the functionality of a service provider to confirm the validity of UTM Flight Message generated by UTM Flight Message Entity. The service provider can include their own Flight Control Policy to the original UTM Flight Message and forward this to a UAVTMS entity.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     flightControlPolicy:    
-      description: 'Indicates the flight control policy generated by the service provider. This data could be included as a text value or referenced by a URI (URL/URN) to a policy defined in JSON or XML format.'    
+      description: Indicates the flight control policy generated by the service provider. This data could be included as a text value or referenced by a URI (URL/URN) to a policy defined in JSON or XML format    
       type: string    
       x-ngsi:    
         type: Property    
@@ -141,22 +179,26 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &unmannedaerialvehicletmsflightmessageagent_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -175,9 +217,11 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -199,9 +243,11 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -225,9 +271,11 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -248,9 +296,11 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -274,9 +324,11 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -302,49 +354,69 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     observedAt:    
-      description: 'Indicates the date/time of the UAVUTMFlightMessageAgent record.'    
+      description: Indicates the date/time of the UAVUTMFlightMessageAgent record    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
-    originatedByUnmannedAutonomousVehicle:    
-      description: 'A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV.'    
+    originatedByUnmannedAerialVehicle:    
+      description: 'A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV'    
       type: boolean    
       x-ngsi:    
         type: Property    
     originator:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Refers to a third party UAV instance or other entity (e.g. listening station) that reported the information in the case the message was not directly originated by the UAV.'    
+          x-ngsi:    
+            type: Property    
+      description: Refers to a third party UAV instance or other entity (e.g. listening station) that reported the information in the case the message was not directly originated by the UAV    
       x-ngsi:    
         type: Relationship    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *unmannedaerialvehicletmsflightmessageagent_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -356,12 +428,12 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity identifier. It has to be UnmannedAerialVehicleTMSFlightMessageAgent'    
+      description: NGSI Entity identifier. It has to be UnmannedAerialVehicleTMSFlightMessageAgent    
       enum:    
         - UnmannedAerialVehicleTMSFlightMessageAgent    
       type: string    
@@ -369,19 +441,23 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
         type: Property    
     unmannedAerialVehicle:    
       anyOf:    
-        - description: 'Property. Identifier format of any NGSI entity'    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Reference to the UAV entity to which this UAVUTMFlightMessageAgent relates.'    
+          x-ngsi:    
+            type: Property    
+      description: Reference to the UAV entity to which this UAVUTMFlightMessageAgent relates    
       x-ngsi:    
         type: Relationship    
     validationResult:    
-      description: 'A logical indicator of validation of the message. True indicates it is the validation is confirmed, false indicates that the validation confirmation fails.'    
+      description: 'A logical indicator of validation of the message. True indicates it is the validation is confirmed, false indicates that the validation confirmation fails'    
       type: boolean    
       x-ngsi:    
         type: Property    
@@ -390,7 +466,7 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
     - required    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMSFlightMessageAgent/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessageAgent/schema.json    
   x-model-tags: GSMA    
@@ -401,9 +477,9 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
 <!-- 70-MiddleNotes -->  
 <!-- /70-MiddleNotes -->  
 <!-- 80-Examples -->  
-## ＃＃＃＃有效载荷的例子  
-#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-v2 key-values 示例  
-这里是一个以JSON-LD格式作为关键值的UnmannedAerialVehicleTMSFlightMessageAgent的例子。当使用`options=keyValues`时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+## 有效载荷示例  
+#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-v2 键值示例  
+下面是一个以 JSON-LD 格式作为键值的 UnmannedAerialVehicleTMSFlightMessageAgent 示例。当使用 `options=keyValues` 时，这与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -427,8 +503,8 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
 }  
 ```  
 </details>  
-#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-v2规范化示例  
-下面是一个以JSON-LD格式规范化的UnmannedAerialVehicleTMSFlightMessageAgent的例子。当不使用选项时，这与NGSI-v2兼容，并返回单个实体的上下文数据。  
+#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-v2 标准化示例  
+下面是一个以 JSON-LD 格式规范化的 UnmannedAerialVehicleTMSFlightMessageAgent 示例。在不使用选项的情况下，它与 NGSI-v2 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -481,8 +557,8 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
 }  
 ```  
 </details>  
-#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-LD关键值示例  
-这里是一个以JSON-LD格式作为关键值的UnmannedAerialVehicleTMSFlightMessageAgent的例子。当使用`options=keyValues`时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-LD 键值示例  
+下面是一个以 JSON-LD 格式作为键值的 UnmannedAerialVehicleTMSFlightMessageAgent 的示例。当使用 `options=keyValues` 时，这与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -509,8 +585,8 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
 }  
 ```  
 </details>  
-#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-LD规范化示例  
-下面是一个以JSON-LD格式规范化的UnmannedAerialVehicleTMSFlightMessageAgent的例子。在不使用选项时，这与NGSI-LD兼容，并返回单个实体的上下文数据。  
+#### UnmannedAerialVehicleTMSFlightMessageAgent NGSI-LD 标准化示例  
+下面是一个 UnmannedAerialVehicleTMSFlightMessageAgent（无人驾驶飞行器 TMS 飞行信息代理）的 JSON-LD 格式规范化示例。在不使用选项时，它与 NGSI-LD 兼容，并返回单个实体的上下文数据。  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -567,7 +643,7 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-参见[常见问题10](https://smartdatamodels.org/index.php/faqs/)，以获得关于如何处理量级单位的答案。  
+请参阅 [FAQ 10](https://smartdatamodels.org/index.php/faqs/)，获取如何处理幅度单位的答案。  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
