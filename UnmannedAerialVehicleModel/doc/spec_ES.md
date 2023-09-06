@@ -7,69 +7,104 @@
 [documento generado automáticamente](https://docs.google.com/presentation/d/e/2PACX-1vTs-Ng5dIAwkg91oTTUdt8ua7woBXhPnwavZ0FxgR8BsAI_Ek3C5q97Nd94HS8KhP-r_quD4H0fgyt3/pub?start=false&loop=false&delayms=3000#slide=id.gb715ace035_0_60)  
 <!-- /15-License -->  
 <!-- 20-Description -->  
-Descripción global: **Esta entidad contiene una descripción armonizada de un modelo genérico de vehículo aéreo no tripulado (UAV) y es aplicable a las aplicaciones de mando y control de UAV y de transporte de UAVs relacionadas.**  
+Descripción global: **Esta entidad contiene una descripción armonizada de un modelo genérico de vehículo aéreo no tripulado (UAV) y es aplicable al mando y control de UAV y a las aplicaciones de transporte de UAV relacionadas.**  
 versión: 0.0.2  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Lista de propiedades  
 
-<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>  
-- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Una descripción de la marca de este modelo de vehículo aéreo no tripulado.  - `categoryUAV[string]`: La categoría de trabajo del UAVModel. Una elección de la siguiente lista:'aerialPhotography, plantProtection, industry, routingInspection, mailing, transportation'.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada.  - `dateCreated[string]`: Marca de tiempo de creación de la entidad. Suele ser asignada por la plataforma de almacenamiento.  - `dateModified[string]`: Marca de tiempo de la última modificación de la entidad. Normalmente será asignada por la plataforma de almacenamiento.  - `description[string]`: Una descripción de este artículo  - `documentation[string]`: Referencia URI (URL/URN) a la hoja de datos del producto o a la documentación de otros fabricantes sobre este modelo de vehículo aéreo no tripulado.  - `fuelType[string]`: El tipo de combustible que alimenta el UAVModel. Una elección de una lista enumerada que describe la fuente de energía. Enum:'gasolina, gasolina (sin plomo), gasolina (con plomo), gasolina, diésel, eléctrico, hidrógeno, autogás glp, gnc, biodiésel, etanol, híbrido eléctrico/gasolina, híbrido eléctrico/diésel, otros'.  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon  - `manufacturerName[string]`: El nombre del fabricante de este modelo de vehículo aéreo no tripulado.  - `maxFlightAltitude[number]`: La altitud máxima de vuelo del modelo de vehículo aéreo no tripulado sobre el suelo. Especifique el valor y las unidades de medida.  - `maxFlightTime[number]`: La duración máxima del vuelo del modelo de vehículo aéreo no tripulado con el combustible lleno y sin carga. Especifique el valor y las unidades de medida.  - `maxGroundVelocity[number]`: La velocidad máxima en tierra del modelo de vehículo aéreo no tripulado (en condiciones de viento en calma). Especifique el valor y las unidades de medida.  - `maxLoad[number]`: La carga máxima que el vehículo aéreo no tripulado puede transportar. Especifique el valor y las unidades de medida.  - `minUnladenWeight[number]`: El peso del vehículo aéreo no tripulado con el combustible lleno pero sin carga. Especifique el valor y las unidades de medida.  - `minWeight[number]`: El peso del vehículo aéreo no tripulado sin combustible ni carga. Especifique el valor y las unidades de medida.  - `model[string]`: El identificador de los modelos UAV, que puede ser un modelo de vehículo aéreo no tripulado.  - `name[string]`: El nombre de este artículo.  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios  - `rotors[number]`: El número de rotores del modelo de vehículo aéreo no tripulado.  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Una secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Identificador de la entidad NGSI. Debe ser UnmannedAerialVehicle  <!-- /30-PropertiesList -->  
+<sup><sub>[*] Si no hay un tipo en un atributo es porque puede tener varios tipos o diferentes formatos/patrones</sub></sup>.  
+- `address[object]`: La dirección postal  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: El país. Por ejemplo, España  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+	- `addressLocality[string]`: La localidad en la que se encuentra la dirección postal, y que está en la región  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
+	- `addressRegion[string]`: La región en la que se encuentra la localidad, y que está en el país  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
+	- `district[string]`: Un distrito es un tipo de división administrativa que, en algunos países, gestiona el gobierno local    
+	- `postOfficeBoxNumber[string]`: El número del apartado de correos para las direcciones de apartados postales. Por ejemplo, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
+	- `postalCode[string]`: El código postal. Por ejemplo, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
+	- `streetAddress[string]`: La dirección  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+- `alternateName[string]`: Un nombre alternativo para este artículo  - `areaServed[string]`: La zona geográfica en la que se presta un servicio o se ofrece un artículo  . Model: [https://schema.org/Text](https://schema.org/Text)- `brandName[string]`: Una descripción de la marca de este modelo de vehículo aéreo no tripulado  - `categoryUAV[string]`: La categoría de trabajo del UAVModel. Una elección de la siguiente lista:'aerialPhotography, plantProtection, industry, routingInspection, mailing, transportation'.  - `dataProvider[string]`: Una secuencia de caracteres que identifica al proveedor de la entidad de datos armonizada  - `dateCreated[date-time]`: Fecha de creación de la entidad. Normalmente será asignada por la plataforma de almacenamiento  - `dateModified[date-time]`: Marca de tiempo de la última modificación de la entidad. Suele ser asignada por la plataforma de almacenamiento  - `description[string]`: Descripción de este artículo  - `documentation[string]`: Referencia URI (URL/URN) a la hoja de datos del producto u otra documentación del fabricante sobre este modelo de vehículo aéreo no tripulado  - `fuelType[string]`: El tipo de combustible que alimenta el UAVModel. Una elección de una lista enumerada que describe la fuente de energía. Enum:'gasolina, gasolina sin plomo, gasolina con plomo, gasolina, gasóleo, eléctrico, hidrógeno, glp autogás, gnc, biodiésel, etanol, híbrido eléctrico/gasolina, híbrido eléctrico/diésel, otro'.  - `id[*]`: Identificador único de la entidad  - `location[*]`: Referencia Geojson al elemento. Puede ser Point, LineString, Polygon, MultiPoint, MultiLineString o MultiPolygon.  - `manufacturerName[string]`: Nombre del fabricante de este modelo de vehículo aéreo no tripulado  - `maxFlightAltitude[number]`: La altitud máxima de vuelo del Modelo de Vehículo Aéreo no Tripulado sobre el suelo. Especifique el valor y las unidades de medida  - `maxFlightTime[number]`: La duración máxima de vuelo del Modelo de Vehículo Aéreo no Tripulado con el combustible lleno y sin carga. Especifique el valor y las unidades de medida  - `maxGroundVelocity[number]`: La velocidad máxima en tierra del modelo de vehículo aéreo no tripulado (en condiciones de viento en calma). Especifique el valor y las unidades de medida  - `maxLoad[number]`: La carga máxima que el vehículo aéreo no tripulado puede transportar. Especifique el valor y las unidades de medida  - `minUnladenWeight[number]`: Peso del vehículo aéreo no tripulado con el combustible lleno pero sin carga. Especifique el valor y las unidades de medida  - `minWeight[number]`: Peso del vehículo aéreo no tripulado sin combustible ni carga. Especifique el valor y las unidades de medida  - `model[string]`: El identificador de modelos UAV, que puede ser un modelo de vehículo aéreo no tripulado  - `name[string]`: El nombre de este artículo  - `owner[array]`: Una lista que contiene una secuencia de caracteres codificada en JSON que hace referencia a los identificadores únicos de los propietarios.  - `rotors[number]`: Número de rotores del vehículo aéreo no tripulado Modelo  - `seeAlso[*]`: lista de uri que apuntan a recursos adicionales sobre el artículo  - `source[string]`: Secuencia de caracteres que indica la fuente original de los datos de la entidad en forma de URL. Se recomienda que sea el nombre de dominio completo del proveedor de origen o la URL del objeto de origen.  - `type[string]`: Identificador de entidad NGSI. Tiene que ser UnmannedAerialVehicle  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propiedades requeridas  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
-Este modelo de datos procede del proyecto original de GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Hay algunas adaptaciones menores para cumplir los requisitos de los modelos de datos inteligentes.  
+Este modelo de datos procede del proyecto IoT original de la GSMA, https://www.gsma.com/iot/iot-big-data/. Hay algunas adaptaciones menores para cumplir los requisitos de los modelos de datos inteligentes.  
 <!-- /40-RequiredProperties -->  
 <!-- 50-DataModelHeader -->  
-## Descripción del modelo de datos de las propiedades  
-Ordenados alfabéticamente (haga clic para ver los detalles)  
+## Descripción de las propiedades del modelo de datos  
+Ordenados alfabéticamente (pulse para más detalles)  
 <!-- /50-DataModelHeader -->  
 <!-- 60-ModelYaml -->  
 <details><summary><strong>full yaml details</strong></summary>    
 ```yaml  
 UnmannedAerialVehicleModel:    
-  description: 'This entity contains a harmonised description of a generic Unmanned Ariel Vehicle (UAV) model and is applicable to UAV command and control and related UAV transport applications.'    
+  description: This entity contains a harmonised description of a generic Unmanned Ariel Vehicle (UAV) model and is applicable to UAV command and control and related UAV transport applications.    
   properties:    
     address:    
-      description: 'The mailing address'    
+      description: The mailing address    
       properties:    
         addressCountry:    
-          description: 'Property. The country. For example, Spain. Model:''https://schema.org/addressCountry'''    
+          description: 'The country. For example, Spain'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressCountry    
+            type: Property    
         addressLocality:    
-          description: 'Property. The locality in which the street address is, and which is in the region. Model:''https://schema.org/addressLocality'''    
+          description: 'The locality in which the street address is, and which is in the region'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressLocality    
+            type: Property    
         addressRegion:    
-          description: 'Property. The region in which the locality is, and which is in the country. Model:''https://schema.org/addressRegion'''    
+          description: 'The region in which the locality is, and which is in the country'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/addressRegion    
+            type: Property    
+        district:    
+          description: 'A district is a type of administrative division that, in some countries, is managed by the local government'    
+          type: string    
+          x-ngsi:    
+            type: Property    
         postOfficeBoxNumber:    
-          description: 'Property. The post office box number for PO box addresses. For example, 03578. Model:''https://schema.org/postOfficeBoxNumber'''    
+          description: 'The post office box number for PO box addresses. For example, 03578'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/postOfficeBoxNumber    
+            type: Property    
         postalCode:    
-          description: 'Property. The postal code. For example, 24004. Model:''https://schema.org/https://schema.org/postalCode'''    
+          description: 'The postal code. For example, 24004'    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/https://schema.org/postalCode    
+            type: Property    
         streetAddress:    
-          description: 'Property. The street address. Model:''https://schema.org/streetAddress'''    
+          description: The street address    
           type: string    
+          x-ngsi:    
+            model: https://schema.org/streetAddress    
+            type: Property    
+        streetNr:    
+          description: Number identifying a specific property on a public street    
+          type: string    
+          x-ngsi:    
+            type: Property    
       type: object    
       x-ngsi:    
         model: https://schema.org/address    
         type: Property    
     alternateName:    
-      description: 'An alternative name for this item'    
+      description: An alternative name for this item    
       type: string    
       x-ngsi:    
         type: Property    
     areaServed:    
-      description: 'The geographic area where a service or offered item is provided'    
+      description: The geographic area where a service or offered item is provided    
       type: string    
       x-ngsi:    
         model: https://schema.org/Text    
         type: Property    
     brandName:    
-      description: 'A description of the brand name of this Unmanned Aerial Vehicle Model.'    
+      description: A description of the brand name of this Unmanned Aerial Vehicle Model    
       type: string    
       x-ngsi:    
         type: Property    
@@ -86,29 +121,29 @@ UnmannedAerialVehicleModel:
       x-ngsi:    
         type: Property    
     dataProvider:    
-      description: 'A sequence of characters identifying the provider of the harmonised data entity.'    
+      description: A sequence of characters identifying the provider of the harmonised data entity    
       type: string    
       x-ngsi:    
         type: Property    
     dateCreated:    
-      description: 'Entity creation timestamp. This will usually be allocated by the storage platform.'    
+      description: Entity creation timestamp. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     dateModified:    
-      description: 'Timestamp of the last modification of the entity. This will usually be allocated by the storage platform.'    
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform    
       format: date-time    
       type: string    
       x-ngsi:    
         type: Property    
     description:    
-      description: 'A description of this item'    
+      description: A description of this item    
       type: string    
       x-ngsi:    
         type: Property    
     documentation:    
-      description: 'URI reference (URL/URN) to Product Data Sheet or other manufacturers documentation about this Unmanned Aerial Vehicle Model.'    
+      description: URI reference (URL/URN) to Product Data Sheet or other manufacturers documentation about this Unmanned Aerial Vehicle Model    
       type: string    
       x-ngsi:    
         type: Property    
@@ -121,8 +156,8 @@ UnmannedAerialVehicleModel:
         - electric    
         - ethanol    
         - gasoline    
-        - 'hybrid electric/petrol'    
-        - 'hybrid electric/diesel'    
+        - hybrid electric/petrol    
+        - hybrid electric/diesel    
         - hydrogen    
         - lpgAutogas    
         - other    
@@ -133,22 +168,26 @@ UnmannedAerialVehicleModel:
       x-ngsi:    
         type: Property    
     id:    
-      anyOf: &unmannedaerialvehiclemodel_-_properties_-_owner_-_items_-_anyof    
-        - description: 'Property. Identifier format of any NGSI entity'    
+      anyOf:    
+        - description: Identifier format of any NGSI entity    
           maxLength: 256    
           minLength: 1    
           pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
           type: string    
-        - description: 'Property. Identifier format of any NGSI entity'    
+          x-ngsi:    
+            type: Property    
+        - description: Identifier format of any NGSI entity    
           format: uri    
           type: string    
-      description: 'Unique identifier of the entity'    
+          x-ngsi:    
+            type: Property    
+      description: Unique identifier of the entity    
       x-ngsi:    
         type: Property    
     location:    
       description: 'Geojson reference to the item. It can be Point, LineString, Polygon, MultiPoint, MultiLineString or MultiPolygon'    
       oneOf:    
-        - description: 'GeoProperty. Geojson reference to the item. Point'    
+        - description: Geojson reference to the item. Point    
           properties:    
             bbox:    
               items:    
@@ -167,9 +206,11 @@ UnmannedAerialVehicleModel:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Point'    
+          title: GeoJSON Point    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. LineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. LineString    
           properties:    
             bbox:    
               items:    
@@ -191,9 +232,11 @@ UnmannedAerialVehicleModel:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON LineString'    
+          title: GeoJSON LineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. Polygon'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. Polygon    
           properties:    
             bbox:    
               items:    
@@ -217,9 +260,11 @@ UnmannedAerialVehicleModel:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON Polygon'    
+          title: GeoJSON Polygon    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiPoint'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiPoint    
           properties:    
             bbox:    
               items:    
@@ -240,9 +285,11 @@ UnmannedAerialVehicleModel:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPoint'    
+          title: GeoJSON MultiPoint    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -266,9 +313,11 @@ UnmannedAerialVehicleModel:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiLineString'    
+          title: GeoJSON MultiLineString    
           type: object    
-        - description: 'GeoProperty. Geojson reference to the item. MultiLineString'    
+          x-ngsi:    
+            type: GeoProperty    
+        - description: Geojson reference to the item. MultiLineString    
           properties:    
             bbox:    
               items:    
@@ -294,70 +343,86 @@ UnmannedAerialVehicleModel:
           required:    
             - type    
             - coordinates    
-          title: 'GeoJSON MultiPolygon'    
+          title: GeoJSON MultiPolygon    
           type: object    
+          x-ngsi:    
+            type: GeoProperty    
       x-ngsi:    
         type: GeoProperty    
     manufacturerName:    
-      description: 'The name of the manufacturer of this Unmanned Aerial Vehicle Model.'    
+      description: The name of the manufacturer of this Unmanned Aerial Vehicle Model    
       type: string    
       x-ngsi:    
         type: Property    
     maxFlightAltitude:    
-      description: 'The maximum flight altitude of the Unmanned Aerial Vehicle Model above ground. Specify value and units of measure.'    
+      description: The maximum flight altitude of the Unmanned Aerial Vehicle Model above ground. Specify value and units of measure    
       type: number    
       x-ngsi:    
         type: Property    
     maxFlightTime:    
-      description: 'The maximum duration of flight of the Unmanned Aerial Vehicle Model with full fuel and no load. Specify value and units of measure.'    
+      description: The maximum duration of flight of the Unmanned Aerial Vehicle Model with full fuel and no load. Specify value and units of measure    
       type: number    
       x-ngsi:    
         type: Property    
     maxGroundVelocity:    
-      description: 'The maximum ground velocity of the Unmanned Aerial Vehicle Model (under still wind conditions). Specify value and units of measure.'    
+      description: The maximum ground velocity of the Unmanned Aerial Vehicle Model (under still wind conditions). Specify value and units of measure    
       type: number    
       x-ngsi:    
         type: Property    
     maxLoad:    
-      description: 'The maximum load that the Unmanned Aerial Vehicle is permitted to transport. Specify value and units of measure.'    
+      description: The maximum load that the Unmanned Aerial Vehicle is permitted to transport. Specify value and units of measure    
       type: number    
       x-ngsi:    
         type: Property    
     minUnladenWeight:    
-      description: 'The weight of the Unmanned Aerial Vehicle with full fuel but no load. Specify value and units of measure.'    
+      description: The weight of the Unmanned Aerial Vehicle with full fuel but no load. Specify value and units of measure    
       type: number    
       x-ngsi:    
         type: Property    
     minWeight:    
-      description: 'The weight of the Unmanned Aerial Vehicle without fuel or load. Specify value and units of measure.'    
+      description: The weight of the Unmanned Aerial Vehicle without fuel or load. Specify value and units of measure    
       type: number    
       x-ngsi:    
         type: Property    
     model:    
-      description: 'The UAV models identifier, which may be a Unmanned Aerial Vehicle Model.'    
+      description: 'The UAV models identifier, which may be a Unmanned Aerial Vehicle Model'    
       type: string    
       x-ngsi:    
         type: Property    
     name:    
-      description: 'The name of this item.'    
+      description: The name of this item    
       type: string    
       x-ngsi:    
         type: Property    
     owner:    
-      description: 'A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)'    
+      description: A List containing a JSON encoded sequence of characters referencing the unique Ids of the owner(s)    
       items:    
-        anyOf: *unmannedaerialvehiclemodel_-_properties_-_owner_-_items_-_anyof    
-        description: 'Property. Unique identifier of the entity'    
+        anyOf:    
+          - description: Identifier format of any NGSI entity    
+            maxLength: 256    
+            minLength: 1    
+            pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$    
+            type: string    
+            x-ngsi:    
+              type: Property    
+          - description: Identifier format of any NGSI entity    
+            format: uri    
+            type: string    
+            x-ngsi:    
+              type: Property    
+        description: Unique identifier of the entity    
+        x-ngsi:    
+          type: Property    
       type: array    
       x-ngsi:    
         type: Property    
     rotors:    
-      description: 'The number of the rotors of the Unmanned Aerial Vehicle Model.'    
+      description: The number of the rotors of the Unmanned Aerial Vehicle Model    
       type: number    
       x-ngsi:    
         type: Property    
     seeAlso:    
-      description: 'list of uri pointing to additional resources about the item'    
+      description: list of uri pointing to additional resources about the item    
       oneOf:    
         - items:    
             format: uri    
@@ -369,12 +434,12 @@ UnmannedAerialVehicleModel:
       x-ngsi:    
         type: Property    
     source:    
-      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object.'    
+      description: 'A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object'    
       type: string    
       x-ngsi:    
         type: Property    
     type:    
-      description: 'NGSI Entity identifier. It has to be UnmannedAerialVehicle'    
+      description: NGSI Entity identifier. It has to be UnmannedAerialVehicle    
       enum:    
         - UnmannedAerialVehicleModel    
       type: string    
@@ -385,7 +450,7 @@ UnmannedAerialVehicleModel:
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2021 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleModel/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicleModel/UnmannedAerialVehicleModel/schema.json    
   x-model-tags: GSMA    
@@ -398,7 +463,7 @@ UnmannedAerialVehicleModel:
 <!-- 80-Examples -->  
 ## Ejemplo de carga útil  
 #### UnmannedAerialVehicleModel NGSI-v2 key-values Ejemplo  
-Aquí hay un ejemplo de un UnmannedAerialVehicleModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+A continuación se muestra un ejemplo de UnmannedAerialVehicleModel en formato JSON-LD como key-values. Esto es compatible con NGSI-v2 cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -424,7 +489,7 @@ UnmannedAerialVehicleModel:
 ```  
 </details>  
 #### UnmannedAerialVehicleModel NGSI-v2 normalizado Ejemplo  
-Este es un ejemplo de un UnmannedAerialVehicleModel en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+A continuación se muestra un ejemplo de UnmannedAerialVehicleModel en formato JSON-LD normalizado. Esto es compatible con NGSI-v2 cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -467,11 +532,12 @@ UnmannedAerialVehicleModel:
     "value": 4  
   },  
   "fuelType": {  
-    "type": "Number",  
+    "type": "Text",  
     "value": "gasoline"  
   },  
   "maxFlightTime": {  
-    "type": "Number"  
+    "type": "Number",  
+    "value": 100  
   },  
   "maxFlightAltitude": {  
     "type": "Number",  
@@ -497,7 +563,7 @@ UnmannedAerialVehicleModel:
 ```  
 </details>  
 #### UnmannedAerialVehicleModel NGSI-LD key-values Ejemplo  
-Aquí hay un ejemplo de un UnmannedAerialVehicleModel en formato JSON-LD como valores-clave. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
+A continuación se muestra un ejemplo de UnmannedAerialVehicleModel en formato JSON-LD como key-values. Esto es compatible con NGSI-LD cuando se utiliza `options=keyValues` y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -527,7 +593,7 @@ UnmannedAerialVehicleModel:
 ```  
 </details>  
 #### UnmannedAerialVehicleModel NGSI-LD normalizado Ejemplo  
-Este es un ejemplo de un UnmannedAerialVehicleModel en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
+A continuación se muestra un ejemplo de UnmannedAerialVehicleModel en formato JSON-LD normalizado. Esto es compatible con NGSI-LD cuando no se utilizan opciones y devuelve los datos de contexto de una entidad individual.  
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
@@ -616,7 +682,7 @@ UnmannedAerialVehicleModel:
 <!-- 90-FooterNotes -->  
 <!-- /90-FooterNotes -->  
 <!-- 95-Units -->  
-Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud  
+Consulte [FAQ 10](https://smartdatamodels.org/index.php/faqs/) para obtener una respuesta sobre cómo tratar las unidades de magnitud.  
 <!-- /95-Units -->  
 <!-- 97-LastFooter -->  
 ---  
