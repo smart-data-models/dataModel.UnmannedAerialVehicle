@@ -22,9 +22,11 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
 - `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `flightControlPolicy[string]`: 表示服务提供商生成的飞行控制策略。该数据可作为文本值，或通过 URI（URL/URN）引用到以 JSON 或 XML 格式定义的策略中。  - `flightMessage[object]`: 描述当前航班状态的航班信息，以全球UTM 信息的形式编码为一个 JSON 对象。 https://bitbucket.org/global_utm/flight-declaration-protocol  	- `flightDeclaration`:     
 	- `flightId`:     
 	- `sequenceNumber`:     
+	- `version`:     
 - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `observedAt[date-time]`: 表示 UAVUTMFlightMessageAgent 记录的日期/时间  - `originatedByUnmannedAerialVehicle[boolean]`: 信息来源的逻辑指标。真表示是无人机本身，假表示是另一个来源、监听站软件应用程序或不同的无人机  - `originator[*]`: 在信息并非由无人机直接发出的情况下，指报告信息的第三方无人机实例或其他实体（如监听站）。  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 实体标识符。必须是 UnmannedAerialVehicleTMSFlightMessageAgent。  - `unmannedAerialVehicle[*]`: 与 UAVUTMFlightMessageAgent 相关的 UAV 实体的引用  - `validationResult[boolean]`: 邮件验证的逻辑指标。真表示验证已确认，假表示验证确认失败  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
@@ -463,7 +465,7 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
         type: Property    
   required:    
     - id    
-    - required    
+    - type    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
