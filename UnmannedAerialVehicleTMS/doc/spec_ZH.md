@@ -22,12 +22,14 @@
 	- `postOfficeBoxNumber[string]`: 用于邮政信箱地址的邮政信箱号码。例如：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 邮政编码。例如：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 街道地址  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
-- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。它可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `operationalInstance[uri]`: 链接到无人机交通管理软件运行实例（假定基于网络）的 URL  - `operator[array]`: 详细列出无人机操作员的列表。指一个或多个 Schema.org 个人或组织。https://schema.org/Person 或 https://schema.org/Organization  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `softwareApplication[object]`:   . Model: [Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication](Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication)	- `applicationCategory`:     
+	- `streetNr[string]`: 标识公共街道上特定房产的编号    
+- `alternateName[string]`: 该项目的替代名称  - `areaServed[string]`: 提供服务或提供物品的地理区域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: 标识统一数据实体提供者的字符序列  - `dateCreated[date-time]`: 实体创建时间戳。通常由存储平台分配  - `dateModified[date-time]`: 实体最后一次修改的时间戳。通常由存储平台分配  - `description[string]`: 项目描述  - `id[*]`: 实体的唯一标识符  - `location[*]`: 项目的 Geojson 引用。可以是点、线条字符串、多边形、多点、多线条字符串或多多边形  - `name[string]`: 该项目的名称  - `operationalInstance[uri]`: 链接到无人机交通管理软件运行实例（假定基于网络）的 URL  - `operator[array]`: 详细列出无人机操作员的列表。指一个或多个 Schema.org 个人或组织。https://schema.org/Person 或 https://schema.org/Organization  - `owner[array]`: 包含一个 JSON 编码字符序列的列表，其中引用了所有者的唯一 Ids  - `seeAlso[*]`: 指向有关该项目的其他资源的 uri 列表  - `softwareApplication[object]`:   . Model: [Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication](Details about the software application using the Schema.org definition https://schema.org/SoftwareApplication)	- `applicationCategory`:     
 	- `operatingSystem`:     
+	- `softwareVersion`:     
 - `source[string]`: 以 URL 形式给出实体数据原始来源的字符串。建议使用源提供者的完全合格域名或源对象的 URL  - `type[string]`: NGSI 实体标识符。必须是 UnmannedAerialVehicleTMS  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 所需属性  
-- `id`  - `required`  <!-- /35-RequiredProperties -->  
+- `id`  - `type`  <!-- /35-RequiredProperties -->  
 <!-- 40-RequiredProperties -->  
 该数据模型来自 GSMA 物联网项目的原始项目 https://www.gsma.com/iot/iot-big-data/。为满足智能数据模型的要求，本数据模型略有改动。  
 <!-- /40-RequiredProperties -->  
@@ -403,7 +405,7 @@ UnmannedAerialVehicleTMS:
         type: Property    
   required:    
     - id    
-    - required    
+    - type    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
