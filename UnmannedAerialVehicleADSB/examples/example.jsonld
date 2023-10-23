@@ -4,7 +4,7 @@
         "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
     ],
     "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",
-    "type": "UnmannedAutonomousVehicleADSB",
+    "type": "UnmannedAerialVehicleADSB",
     "source": "https://source.example.com",
     "dataProvider": "https://provider.example.com",
     "unmannedAutonomousVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",
