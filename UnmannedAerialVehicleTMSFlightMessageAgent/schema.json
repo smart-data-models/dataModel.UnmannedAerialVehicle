@@ -140,6 +140,6 @@
     ],
     "required": [
         "id",
-        "required"
+        "type"
     ]
 }
