@@ -22,9 +22,11 @@
 	- `postOfficeBoxNumber[string]`: Die Postfachnummer für Postfachadressen. Zum Beispiel, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Die Postleitzahl. Zum Beispiel, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: Die Straßenanschrift  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Nummer zur Identifizierung eines bestimmten Grundstücks an einer öffentlichen Straße    
 - `alternateName[string]`: Ein alternativer Name für diesen Artikel  - `areaServed[string]`: Das geografische Gebiet, in dem eine Dienstleistung oder ein angebotener Artikel erbracht wird  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Eine Folge von Zeichen zur Identifizierung des Anbieters der harmonisierten Dateneinheit  - `dateCreated[date-time]`: Zeitstempel der Entitätserstellung. Dieser wird normalerweise von der Speicherplattform zugewiesen  - `dateModified[date-time]`: Zeitstempel der letzten Änderung der Entität. Dieser wird in der Regel von der Speicherplattform vergeben  - `description[string]`: Eine Beschreibung dieses Artikels  - `flightControlPolicy[string]`: Gibt die vom Diensteanbieter erstellte Flugkontrollrichtlinie an. Diese Daten können als Textwert enthalten sein oder durch einen URI (URL/URN) zu einer im JSON- oder XML-Format definierten Richtlinie referenziert werden  - `flightMessage[object]`: Eine Flugmeldung, die den aktuellen Flugstatus beschreibt, kodiert als globale UTM-Meldung, kodiert als JSON-Objekt. https://bitbucket.org/global_utm/flight-declaration-protocol  	- `flightDeclaration`:     
 	- `flightId`:     
 	- `sequenceNumber`:     
+	- `version`:     
 - `id[*]`: Eindeutiger Bezeichner der Entität  - `location[*]`: Geojson-Referenz auf das Element. Es kann Punkt, LineString, Polygon, MultiPoint, MultiLineString oder MultiPolygon sein  - `name[string]`: Der Name dieses Artikels  - `observedAt[date-time]`: Gibt das Datum/die Uhrzeit des UAVUTMFlightMessageAgent-Datensatzes an  - `originatedByUnmannedAerialVehicle[boolean]`: Ein logischer Indikator für die Quelle der Nachricht. True zeigt an, dass es sich um das UAV selbst handelt, false zeigt an, dass es sich um eine andere Quelle, eine Softwareanwendung der Abhörstation oder ein anderes UAV handelt.  - `originator[*]`: Bezieht sich auf eine dritte UAV-Instanz oder eine andere Einheit (z. B. eine Abhörstation), die die Informationen gemeldet hat, falls die Nachricht nicht direkt von der UAV stammt  - `owner[array]`: Eine Liste mit einer JSON-kodierten Zeichenfolge, die auf die eindeutigen Kennungen der Eigentümer verweist  - `seeAlso[*]`: Liste von URLs, die auf zusätzliche Ressourcen zu dem Artikel verweisen  - `source[string]`: Eine Folge von Zeichen, die die ursprüngliche Quelle der Entitätsdaten als URL angibt. Empfohlen wird der voll qualifizierte Domänenname des Quellanbieters oder die URL des Quellobjekts.  - `type[string]`: NGSI-Kennung der Entität. Er muss UnmannedAerialVehicleTMSFlightMessageAgent lauten.  - `unmannedAerialVehicle[*]`: Referenz auf die UAV-Einheit, auf die sich dieser UAVUTMFlightMessageAgent bezieht  - `validationResult[boolean]`: Ein logischer Indikator für die Validierung der Nachricht. True bedeutet, dass die Validierung bestätigt wurde, false bedeutet, dass die Validierungsbestätigung fehlgeschlagen ist.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Erforderliche Eigenschaften  
@@ -463,7 +465,7 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
         type: Property    
   required:    
     - id    
-    - required    
+    - type    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
