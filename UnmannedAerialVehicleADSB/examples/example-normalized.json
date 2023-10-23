@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",
-  "type": "UnmannedAutonomousVehicleADSB",
+  "type": "UnmannedAerialVehicleADSB",
   "source": {
     "type": "URL",
     "value": "https://source.example.com"
