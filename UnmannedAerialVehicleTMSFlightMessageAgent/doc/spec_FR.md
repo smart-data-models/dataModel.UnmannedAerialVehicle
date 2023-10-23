@@ -22,9 +22,11 @@
 	- `postOfficeBoxNumber[string]`: Le numéro de la boîte postale pour les adresses de boîtes postales. Par exemple, 03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
 - `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `flightControlPolicy[string]`: Indique la politique de contrôle des vols générée par le fournisseur de services. Ces données peuvent être incluses sous forme de texte ou référencées par un URI (URL/URN) vers une politique définie au format JSON ou XML.  - `flightMessage[object]`: Message de vol décrivant l'état actuel du vol, encodé sous la forme d'un message UTM global encodé sous la forme d'un objet JSON. https://bitbucket.org/global_utm/flight-declaration-protocol  	- `flightDeclaration`:     
 	- `flightId`:     
 	- `sequenceNumber`:     
+	- `version`:     
 - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément  - `observedAt[date-time]`: Indique la date et l'heure de l'enregistrement UAVUTMFlightMessageAgent.  - `originatedByUnmannedAerialVehicle[boolean]`: Indicateur logique de la source du message. True indique qu'il s'agit du drone lui-même, false indique qu'il s'agit d'une source différente, d'une application logicielle d'une station d'écoute ou d'un drone différent.  - `originator[*]`: Désigne une instance de drone tierce ou une autre entité (par exemple une station d'écoute) qui a communiqué l'information dans le cas où le message n'émane pas directement du drone.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Identifiant de l'entité NGSI. Il doit s'agir de UnmannedAerialVehicleTMSFlightMessageAgent.  - `unmannedAerialVehicle[*]`: Référence à l'entité UAV à laquelle se rapporte cet UAVUTMFlightMessageAgent  - `validationResult[boolean]`: Indicateur logique de la validation du message. True indique que la validation est confirmée, false indique que la confirmation de la validation échoue.  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
@@ -463,7 +465,7 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
         type: Property    
   required:    
     - id    
-    - required    
+    - type    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
