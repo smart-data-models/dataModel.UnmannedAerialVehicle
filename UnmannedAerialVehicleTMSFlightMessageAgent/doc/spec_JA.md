@@ -22,9 +22,11 @@
 	- `postOfficeBoxNumber[string]`: 私書箱の住所のための私書箱番号。例：03578  . Model: [https://schema.org/postOfficeBoxNumber](https://schema.org/postOfficeBoxNumber)  
 	- `postalCode[string]`: 郵便番号。例：24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: 番地  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
+	- `streetNr[string]`: 公道上の特定の物件を特定する番号    
 - `alternateName[string]`: この項目の別名  - `areaServed[string]`: サービスまたは提供品が提供される地理的地域  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: ハーモナイズされたデータ・エンティティの提供者を識別する一連の文字。  - `dateCreated[date-time]`: エンティティの作成タイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられます。  - `dateModified[date-time]`: エンティティの最終変更のタイムスタンプ。これは通常、ストレージプラットフォームによって割り当てられる。  - `description[string]`: この商品の説明  - `flightControlPolicy[string]`: サービスプロバイダによって生成された飛行制御ポリシーを示す。このデータは、テキスト値として含まれるか、JSONまたはXML形式で定義されたポリシーへのURI（URL/URN）によって参照される。  - `flightMessage[object]`: JSONオブジェクトとしてエンコードされたグローバルUTMメッセージとしてエンコードされた、現在のフライトステータスを記述するフライトメッセージ。https://bitbucket.org/global_utm/flight-declaration-protocol  	- `flightDeclaration`:     
 	- `flightId`:     
 	- `sequenceNumber`:     
+	- `version`:     
 - `id[*]`: エンティティの一意識別子  - `location[*]`: アイテムへの Geojson 参照。Point、LineString、Polygon、MultiPoint、MultiLineString、MultiPolygon のいずれか。  - `name[string]`: このアイテムの名前  - `observedAt[date-time]`: UAVUTMFlightMessageAgentレコードの日付/時刻を示す。  - `originatedByUnmannedAerialVehicle[boolean]`: メッセージの送信元を示す論理的なインジケータ。trueはUAV自身であることを示し、falseは別の送信元、リスニングステーションのソフトウェアアプリケーション、または別のUAVであることを示す。  - `originator[*]`: メッセージがUAVから直接発信されたものではない場合、情報を報告した第三者のUAVインスタンスまたはその他のエンティティ（リスニングステーションなど）を指す。  - `owner[array]`: 所有者の固有IDを参照するJSONエンコードされた文字列を含むリスト。  - `seeAlso[*]`: アイテムに関する追加リソースを指すURIのリスト  - `source[string]`: エンティティ・データの元のソースを URL として示す一連の文字。ソース・プロバイダの完全修飾ドメイン名、またはソース・オブジェクトの URL を推奨する。  - `type[string]`: NGSI エンティティ識別子。これは UnmannedAerialVehicleTMSFlightMessageAgent でなければならない。  - `unmannedAerialVehicle[*]`: このUAVUTMFlightMessageAgentが関連するUAVエンティティへの参照。  - `validationResult[boolean]`: メッセージのバリデーションの論理的な指標。trueはバリデーションが確認されたことを示し、falseはバリデーションの確認が失敗したことを示す。  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 必須プロパティ  
@@ -463,7 +465,7 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
         type: Property    
   required:    
     - id    
-    - required    
+    - type    
   type: object    
   x-derived-from: ""    
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'    
