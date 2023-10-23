@@ -363,7 +363,7 @@ UnmannedAerialVehicleTMS:
         type: Property
   required:
     - id
-    - required
+    - type
   type: object
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
