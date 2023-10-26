@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:UAVUTMFlightMessageAgent:cba823cc-5930-11e8-b8fe-d7c79082c9c7",
-  "type": "UAVUTMFlightMessageAgent",
+  "type": "UnmannedAerialVehicleTMSFlightMessageAgent",
   "source": "https://source.example.com",
   "dataProvider": "https://provider.example.com",
   "unmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",
