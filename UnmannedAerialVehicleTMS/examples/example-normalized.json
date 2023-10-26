@@ -1,6 +1,6 @@
 {
   "id": "urn:ngsi-ld:UAVTMS:e0ad01b2-592a-11e8-bf93-cf2039a6c0cf",
-  "type": "UAVUnmannedAerialVehicleTMS",
+  "type": "UnmannedAerialVehicleTMS",
   "source": {
     "type": "Text",
     "value": "https://source.example.com"
