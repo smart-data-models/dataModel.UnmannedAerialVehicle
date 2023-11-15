@@ -10,8 +10,8 @@
     "value": "https://provider.example.com"
   },
   "unmannedAerialVehicle": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
+    "type": "Text",
+    "value": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
   },
   "observedAt": {
     "type": "DateTime",
@@ -22,8 +22,8 @@
     "value": false
   },
   "originator": {
-    "type": "Relationship",
-    "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"
+    "type": "Text",
+    "value": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"
   },
   "flightMessage": {
     "type": "StructuredValue",
