@@ -27,14 +27,14 @@
     "value": "http://example.com/uavtms"
   },
   "owner": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
       "urn:ngsi-ld:Organization:c5d75a1c-592b-11e8-8a09-3bd13644426b"
     ]
   },
   "operator": {
-    "type": "array",
+    "type": "StructuredValue",
     "value": [
       "urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a",
       "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"
