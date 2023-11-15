@@ -10,8 +10,7 @@
   "flightMessage": {
     "flightId": "3ce68ac8-5932-11e8-9a8d-ef74eb0fb0a2",
     "sequenceNumber": 0,
-    "flightDeclaration": {
-    },
+    "flightDeclaration": {},
     "version": "1.0.0"
   },
   "validationResult": true,
