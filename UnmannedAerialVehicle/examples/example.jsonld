@@ -1,34 +1,34 @@
 {
-    "@context": [
-        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.json",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
-    ],
-    "id": "urn:ngsi-ld:UAV:1fa179a6-b507-4857-ad72-eb5513ef05c6",
-    "type": "UnmannedAerialVehicle",
-    "source": "https://source.example.com",
-    "dataProvider": "https://provider.example.com",
-    "uavModel": "urn:ngsi-ld:UAVModel:23821045-33d4-46ec-b777-98f461bf4856",
-    "name": "Yellow1",
-    "owner": [
-        "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
-        "urn:ngsi-ld:Organization:1be9cd61-ef59-421f-a326-4b6c84411ad4"
-    ],
-    "operator": [
-        "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
-        "urn:ngsi-ld:Person:3d5f533e-5920-11e8-871b-534f1ae5f35d"
-    ],
-    "operationMode": "vlos",
-    "location": {
-        "type": "Point",
-        "coordinates": [
-            -103.9904,
-            39.7564
-        ]
-    },
-    "elevation": 1000,
-    "observedAt": "2016-08-23T10:18:16Z",
-    "flightStatus": "takeoff",
-    "workStatus": "finish",
-    "groundSpeed": 50,
-    "fuel": 50
+  "@context": [
+    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.json",
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+  ],
+  "id": "urn:ngsi-ld:UAV:1fa179a6-b507-4857-ad72-eb5513ef05c6",
+  "type": "UnmannedAerialVehicle",
+  "source": "https://source.example.com",
+  "dataProvider": "https://provider.example.com",
+  "uavModel": "urn:ngsi-ld:UAVModel:23821045-33d4-46ec-b777-98f461bf4856",
+  "name": "Yellow1",
+  "owner": [
+    "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+    "urn:ngsi-ld:Organization:1be9cd61-ef59-421f-a326-4b6c84411ad4"
+  ],
+  "operator": [
+    "urn:ngsi-ld:Person:cdfd9cb8-ae2b-47cb-a43a-b9767ffd5c84",
+    "urn:ngsi-ld:Person:3d5f533e-5920-11e8-871b-534f1ae5f35d"
+  ],
+  "operationMode": "vlos",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      -103.9904,
+      39.7564
+    ]
+  },
+  "elevation": 1000,
+  "observedAt": "2016-08-23T10:18:16Z",
+  "flightStatus": "takeoff",
+  "workStatus": "finish",
+  "groundSpeed": 50,
+  "fuel": 50
 }
