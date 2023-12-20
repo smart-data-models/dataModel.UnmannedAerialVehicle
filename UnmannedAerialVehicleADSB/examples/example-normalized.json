@@ -9,7 +9,7 @@
     "type": "Text",
     "value": "https://provider.example.com"
   },
-  "unmannedAutonomousVehicle": {
+  "unmannedAerialVehicle": {
     "type": "Text",
     "value": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
   },
@@ -17,7 +17,7 @@
     "type": "DateTime",
     "value": "2016-08-23T10:18:16Z"
   },
-  "originatedByUnmannedAutonomousVehicle": {
+  "originatedByUnmannedAerialVehicle": {
     "type": "Boolean",
     "value": false
   },
@@ -25,7 +25,7 @@
     "type": "Text",
     "value": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"
   },
-  "UnmannedAutonomousVehicleADSBroadcast": {
+  "UnmannedAerialVehicleADSBroadcast": {
     "type": "Text",
     "value": "8D4840D6202CC371C32CE0576098"
   }
