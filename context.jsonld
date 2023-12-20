@@ -94,6 +94,7 @@
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
         "type": "@type",
+        "uavModel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/uavModel",
         "unmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAerialVehicle",
         "validationResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/validationResult",
         "version": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/version",
