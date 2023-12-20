@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/schema#",
-    "$schemaVersion": "0.0.1",
+    "$schemaVersion": "0.0.2",
     "modelTags": "GSMA",
     "$id": "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicle/schema.json",
     "title": "Smart Data models - Unmanned Aerial Vehicle schema",
@@ -22,7 +22,7 @@
                         "UnmannedAerialVehicle"
                     ]
                 },
-                "UnmannedAerialVehicleModel": {
+                "uavModel": {
                     "anyOf": [
                         {
                             "type": "string",
@@ -37,7 +37,7 @@
                             "description": "Property. Identifier format of any NGSI entity"
                         }
                     ],
-                    "description": "Relationship. Reference to the UAV Model definition which describes the UAV in more detail"
+                    "description": "Relationship. Reference to the Unmanned Aerial Vehicle (UAV) Model definition which describes the UAV in more detail"
                 },
                 "operator": {
                     "type": "array",
