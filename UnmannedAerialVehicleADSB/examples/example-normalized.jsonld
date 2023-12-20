@@ -13,7 +13,7 @@
         "type": "Property",
         "value": "https://provider.example.com"
     },
-    "unmannedAutonomousVehicle": {
+    "unmannedAerialVehicle": {
         "type": "Relationship",
         "object": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856"
     },
@@ -24,7 +24,7 @@
             "@value": "2016-08-23T10:18:16Z"
         }
     },
-    "originatedByUnmannedAutonomousVehicle": {
+    "originatedByUnmannedAerialVehicle": {
         "type": "Property",
         "value": false
     },
@@ -32,7 +32,7 @@
         "type": "Relationship",
         "object": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec"
     },
-    "UnmannedAutonomousVehicleADSBroadcast": {
+    "UnmannedAerialVehicleADSBroadcast": {
         "type": "Property",
         "value": "8D4840D6202CC371C32CE0576098"
     }
