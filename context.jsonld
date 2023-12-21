@@ -2,7 +2,6 @@
     "@context": {
         "UnmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicle",
         "UnmannedAerialVehicleADSB": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB",
-        "UnmannedAerialVehicleADSBroadcast": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSBroadcast",
         "UnmannedAerialVehicleEvent": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent",
         "UnmannedAerialVehicleModel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleModel",
         "UnmannedAerialVehicleTMS": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMS",
@@ -96,6 +95,7 @@
         "type": "@type",
         "uavModel": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/uavModel",
         "unmannedAerialVehicle": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAerialVehicle",
+        "unmannedAerialVehicleADSBroadcast": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/unmannedAerialVehicleADSBroadcast",
         "validationResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/validationResult",
         "version": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/version",
         "workStatus": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/workStatus"
