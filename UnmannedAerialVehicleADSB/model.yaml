@@ -1,28 +1,6 @@
 UnmannedAerialVehicleADSB:
   description: This entity contains a harmonised description of a generic UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.
   properties:
-    UnmannedAerialVehicle:
-      anyOf:
-        - description: Identifier format of any NGSI entity
-          maxLength: 256
-          minLength: 1
-          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
-          type: string
-          x-ngsi:
-            type: Property
-        - description: Identifier format of any NGSI entity
-          format: uri
-          type: string
-          x-ngsi:
-            type: Property
-      description: Reference to the Unmanned Aerial Vehicle entity to which this broadcast message relates
-      x-ngsi:
-        type: Relationship
-    UnmannedAerialVehicleADSBroadcast:
-      description: A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits
-      type: string
-      x-ngsi:
-        type: Property
     address:
       description: The mailing address
       properties:
@@ -370,12 +348,34 @@ UnmannedAerialVehicleADSB:
       type: string
       x-ngsi:
         type: Property
+    unmannedAerialVehicle:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Reference to the Unmanned Aerial Vehicle entity to which this broadcast message relates
+      x-ngsi:
+        type: Relationship
+    unmannedAerialVehicleADSBroadcast:
+      description: A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits
+      type: string
+      x-ngsi:
+        type: Property
   required:
     - id
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json
   x-model-tags: GSMA
