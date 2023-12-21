@@ -7,19 +7,6 @@
     "displayName": "UnmannedAerialVehicleADSB",
     "contents": [
         {
-            "name": "UnmannedAerialVehicle",
-            "writable": true,
-            "displayName": "UnmannedAerialVehicle"
-        },
-        {
-            "name": "UnmannedAerialVehicleADSBroadcast",
-            "writable": true,
-            "displayName": "UnmannedAerialVehicleADSBroadcast",
-            "@type": "Property",
-            "schema": "string",
-            "comment": "A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits."
-        },
-        {
             "name": "alternateName",
             "writable": true,
             "displayName": "alternateName",
@@ -41,7 +28,7 @@
             "displayName": "dataProvider",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters identifying the provider of the harmonised data entity."
+            "comment": "A sequence of characters identifying the provider of the harmonised data entity"
         },
         {
             "name": "dateCreated",
@@ -49,7 +36,7 @@
             "displayName": "dateCreated",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform."
+            "comment": "Entity creation timestamp. This will usually be allocated by the storage platform"
         },
         {
             "name": "dateModified",
@@ -57,7 +44,7 @@
             "displayName": "dateModified",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform."
+            "comment": "Timestamp of the last modification of the entity. This will usually be allocated by the storage platform"
         },
         {
             "name": "description",
@@ -68,12 +55,17 @@
             "comment": "A description of this item"
         },
         {
+            "name": "location",
+            "writable": true,
+            "displayName": "location"
+        },
+        {
             "name": "name",
             "writable": true,
             "displayName": "name",
             "@type": "Property",
             "schema": "string",
-            "comment": "The name of this item."
+            "comment": "The name of this item"
         },
         {
             "name": "observedAt",
@@ -81,7 +73,7 @@
             "displayName": "observedAt",
             "@type": "Property",
             "schema": "dateTime",
-            "comment": "Indicates the date/time of the DBS broadcast."
+            "comment": "Indicates the date/time of the DBS broadcast"
         },
         {
             "name": "originatedByUnmannedAerialVehicle",
@@ -89,7 +81,7 @@
             "displayName": "originatedByUnmannedAerialVehicle",
             "@type": "Property",
             "schema": "boolean",
-            "comment": "A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV."
+            "comment": "A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV"
         },
         {
             "name": "originator",
@@ -107,7 +99,20 @@
             "displayName": "source",
             "@type": "Property",
             "schema": "string",
-            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object."
+            "comment": "A sequence of characters giving the original source of the entity data as a URL. Recommended to be the fully qualified domain name of the source provider, or the URL to the source object"
+        },
+        {
+            "name": "unmannedAerialVehicle",
+            "writable": true,
+            "displayName": "unmannedAerialVehicle"
+        },
+        {
+            "name": "unmannedAerialVehicleADSBroadcast",
+            "writable": true,
+            "displayName": "unmannedAerialVehicleADSBroadcast",
+            "@type": "Property",
+            "schema": "string",
+            "comment": "A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits"
         },
         {
             "@type": "Telemetry",
@@ -138,6 +143,10 @@
                     "schema": "string"
                 },
                 {
+                    "name": "district",
+                    "schema": "string"
+                },
+                {
                     "name": "postOfficeBoxNumber",
                     "schema": "string"
                 },
@@ -148,38 +157,12 @@
                 {
                     "name": "streetAddress",
                     "schema": "string"
+                },
+                {
+                    "name": "streetNr",
+                    "schema": "string"
                 }
             ]
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Point",
-            "schema": "point"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_LineString",
-            "schema": "lineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_Polygon",
-            "schema": "polygon"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPoint",
-            "schema": "multiPoint"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiLineString",
-            "schema": "multiLineString"
-        },
-        {
-            "@type": "Telemetry",
-            "name": "location_MultiPolygon",
-            "schema": "multiPolygon"
         }
     ]
 }
