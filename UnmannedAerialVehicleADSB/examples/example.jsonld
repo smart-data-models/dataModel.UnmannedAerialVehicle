@@ -1,8 +1,4 @@
 {
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/context.jsonld",
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
-  ],
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",
   "type": "UnmannedAerialVehicleADSB",
   "source": "https://source.example.com",
@@ -10,5 +6,8 @@
   "unmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",
   "originatedByUnmannedAerialVehicle": false,
   "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",
-  "UnmannedAerialVehicleADSBroadcast": "8D4840D6202CC371C32CE0576098"
+  "UnmannedAerialVehicleADSBroadcast": "8D4840D6202CC371C32CE0576098",
+    "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+  ]
 }
