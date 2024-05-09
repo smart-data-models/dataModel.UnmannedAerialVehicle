@@ -43,7 +43,7 @@
         "value": "https://www.example.com/fight-policy"
     },
     "@context": [
-        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessage/context.jsonld",
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
     ]
 }

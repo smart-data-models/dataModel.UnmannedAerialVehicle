@@ -44,7 +44,7 @@
           "format": "date-time",
           "description": "Property. Indicates the date/time of the UAVUTMFlightMessageAgent record"
         },
-        "originatedByUnmannedAerialVehicle": {
+        "originatedByUnmannedAutonomousVehicle": {
           "type": "boolean",
           "description": "Property. A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV"
         },
