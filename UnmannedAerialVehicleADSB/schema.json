@@ -65,7 +65,7 @@
           ],
           "description": "Relationship. Refers to a third party UAV instance or other entity (e.g. listening station) that reported the information in the case the message was not directly originated by the UAV"
         },
-        "UnmannedAerialVehicleADSBroadcast": {
+        " ": {
           "type": "string",
           "description": "Property. A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits"
         }
