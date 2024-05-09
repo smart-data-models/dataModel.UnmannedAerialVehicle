@@ -8,14 +8,14 @@
 <!-- /15-License -->  
 <!-- 20-Description -->  
 Description globale : **Cette entité contient une description harmonisée d'une diffusion générique de surveillance dépendante automatique de véhicules aériens sans pilote (UAV). Cette entité est principalement associée au contrôle et à la gestion des véhicules aériens sans pilote. Chaque instance d'UAVADSB sera liée à une instance d'UAV spécifique**.  
-version : 0.1.0  
+version : 0.1.1  
 <!-- /20-Description -->  
 <!-- 30-PropertiesList -->  
 
 ## Liste des propriétés  
 
 <sup><sub>[*] S'il n'y a pas de type dans un attribut, c'est parce qu'il peut avoir plusieurs types ou différents formats/modèles</sub></sup>.  
-- `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
+- `UnmannedAerialVehicleADSBroadcast[string]`: Message de vol décrivant l'état actuel du vol en tant que message DBSB stocké sous la forme d'une chaîne de chiffres hexadécimaux.  - `address[object]`: L'adresse postale  . Model: [https://schema.org/address](https://schema.org/address)	- `addressCountry[string]`: Le pays. Par exemple, l'Espagne  . Model: [https://schema.org/addressCountry](https://schema.org/addressCountry)  
 	- `addressLocality[string]`: La localité dans laquelle se trouve l'adresse postale et qui se trouve dans la région  . Model: [https://schema.org/addressLocality](https://schema.org/addressLocality)  
 	- `addressRegion[string]`: La région dans laquelle se trouve la localité et qui se trouve dans le pays  . Model: [https://schema.org/addressRegion](https://schema.org/addressRegion)  
 	- `district[string]`: Un district est un type de division administrative qui, dans certains pays, est géré par le gouvernement local.    
@@ -23,13 +23,13 @@
 	- `postalCode[string]`: Le code postal. Par exemple, 24004  . Model: [https://schema.org/https://schema.org/postalCode](https://schema.org/https://schema.org/postalCode)  
 	- `streetAddress[string]`: L'adresse de la rue  . Model: [https://schema.org/streetAddress](https://schema.org/streetAddress)  
 	- `streetNr[string]`: Numéro identifiant une propriété spécifique sur une voie publique    
-- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément  - `observedAt[date-time]`: Indique la date et l'heure de la diffusion DBS  - `originatedByUnmannedAerialVehicle[boolean]`: Indicateur logique de la source du message. True indique qu'il s'agit du drone lui-même, false indique qu'il s'agit d'une source différente, d'une application logicielle d'une station d'écoute ou d'un drone différent.  - `originator[*]`: Désigne une instance de drone tierce ou une autre entité (par exemple une station d'écoute) qui a communiqué l'information dans le cas où le message n'émane pas directement du drone.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Identifiant de l'entité NGSI. Il doit s'agir de UnmannedAerialVehicleADSB.  - `unmannedAerialVehicle[*]`: Référence à l'entité du véhicule aérien sans pilote à laquelle ce message de diffusion se rapporte  - `unmannedAerialVehicleADSBroadcast[string]`: Message de vol décrivant l'état actuel du vol en tant que message DBSB stocké sous la forme d'une chaîne de chiffres hexadécimaux.  <!-- /30-PropertiesList -->  
+- `alternateName[string]`: Un nom alternatif pour ce poste  - `areaServed[string]`: La zone géographique où un service ou un article est offert  . Model: [https://schema.org/Text](https://schema.org/Text)- `dataProvider[string]`: Une séquence de caractères identifiant le fournisseur de l'entité de données harmonisées  - `dateCreated[date-time]`: Horodatage de la création de l'entité. Celle-ci est généralement attribuée par la plate-forme de stockage  - `dateModified[date-time]`: Date de la dernière modification de l'entité. Cette date est généralement attribuée par la plate-forme de stockage  - `description[string]`: Une description de l'article  - `id[*]`: Identifiant unique de l'entité  - `location[*]`: Référence Geojson à l'élément. Il peut s'agir d'un point, d'une chaîne de ligne, d'un polygone, d'un point multiple, d'une chaîne de ligne multiple ou d'un polygone multiple.  - `name[string]`: Le nom de cet élément  - `observedAt[date-time]`: Indique la date et l'heure de la diffusion DBS  - `originatedByUnmannedAerialVehicle[boolean]`: Indicateur logique de la source du message. True indique qu'il s'agit du drone lui-même, false indique qu'il s'agit d'une source différente, d'une application logicielle d'une station d'écoute ou d'un drone différent.  - `originator[*]`: Désigne une instance de drone tierce ou une autre entité (par exemple une station d'écoute) qui a communiqué l'information dans le cas où le message n'émane pas directement du drone.  - `owner[array]`: Une liste contenant une séquence de caractères encodés JSON référençant les identifiants uniques du ou des propriétaires.  - `seeAlso[*]`: liste d'uri pointant vers des ressources supplémentaires concernant l'élément  - `source[string]`: Séquence de caractères indiquant la source originale des données de l'entité sous forme d'URL. Il est recommandé d'utiliser le nom de domaine complet du fournisseur de la source ou l'URL de l'objet source.  - `type[string]`: Identifiant de l'entité NGSI. Il doit s'agir de UnmannedAerialVehicleADSB.  - `unmannedAerialVehicle[*]`: Référence à l'entité du véhicule aérien sans pilote à laquelle ce message de diffusion se rapporte  <!-- /30-PropertiesList -->  
 <!-- 35-RequiredProperties -->  
 Propriétés requises  
 - `id`  - `type`  <!-- /35-RequiredProperties -->  
-<!-- 40-RequiredProperties -->  
+<!-- 40-NotesYaml -->  
 Ce modèle de données provient du projet original GSMA IoT, https://www.gsma.com/iot/iot-big-data/. Il a fait l'objet de quelques adaptations mineures pour répondre aux exigences des modèles de données intelligents.  
-<!-- /40-RequiredProperties -->  
+<!-- /40-NotesYaml -->  
 <!-- 50-DataModelHeader -->  
 ## Modèle de données description des propriétés  
 Classés par ordre alphabétique (cliquez pour plus de détails)  
@@ -40,6 +40,11 @@
 UnmannedAerialVehicleADSB:    
   description: This entity contains a harmonised description of a generic UnmannedAerialVehicle (UAV) Automatic Dependent Surveillance–Broadcast. This entity is primarily associated with the control and management of Unmanned Aerial Vehicles. Each UAVADSB instance will be related to a specific UAV instance.    
   properties:    
+    UnmannedAerialVehicleADSBroadcast:    
+      description: A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits    
+      type: string    
+      x-ngsi:    
+        type: Property    
     address:    
       description: The mailing address    
       properties:    
@@ -404,21 +409,16 @@ UnmannedAerialVehicleADSB:
       description: Reference to the Unmanned Aerial Vehicle entity to which this broadcast message relates    
       x-ngsi:    
         type: Relationship    
-    unmannedAerialVehicleADSBroadcast:    
-      description: A flight message describing the current flight status as a DBSB Message stored as a string of hexadecimal digits    
-      type: string    
-      x-ngsi:    
-        type: Property    
   required:    
     - id    
     - type    
   type: object    
   x-derived-from: ""    
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2023 Contributors to Smart Data Models Program'    
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'    
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleADSB/LICENSE.md    
   x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleADSB/schema.json    
   x-model-tags: GSMA    
-  x-version: 0.1.0    
+  x-version: 0.1.1    
 ```  
 </details>    
 <!-- /60-ModelYaml -->  
@@ -486,10 +486,6 @@ UnmannedAerialVehicleADSB:
 <details><summary><strong>show/hide example</strong></summary>    
 ```json  
 {  
-  "@context": [  
-    "https://smart-data-models.github.io/dataModel.UnmannedAutonomousVehicle/UnmannedAutonomousVehicleADSB/context.jsonld",  
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
-  ],  
   "id": "urn:ngsi-ld:UAVADSB:1fa179a6-b507-4857-ad72-eb5513ef05c8",  
   "type": "UnmannedAerialVehicleADSB",  
   "source": "https://source.example.com",  
@@ -497,7 +493,10 @@ UnmannedAerialVehicleADSB:
   "unmannedAerialVehicle": "urn:ngsi-ld:UAV:23821045-33d4-46ec-b777-98f461bf4856",  
   "originatedByUnmannedAerialVehicle": false,  
   "originator": "urn:ngsi-ld:UAV:29935bbe-5922-11e8-9742-93bfb84686ec",  
-  "UnmannedAerialVehicleADSBroadcast": "8D4840D6202CC371C32CE0576098"  
+  "UnmannedAerialVehicleADSBroadcast": "8D4840D6202CC371C32CE0576098",  
+    "@context": [  
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"  
+  ]  
 }  
 ```  
 </details>  
