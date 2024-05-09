@@ -1,6 +1,6 @@
 {
     "@context": [
-        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.json",
+        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",
         "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
     ],
     "id": "urn:ngsi-ld:UAV:1fa179a6-b507-4857-ad72-eb5513ef05c6",
