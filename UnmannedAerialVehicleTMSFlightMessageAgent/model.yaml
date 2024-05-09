@@ -96,44 +96,89 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
       description: 'A flight message describing the current flight status encoded as a Global UTM Message encoded as a JSON object. https://bitbucket.org/global_utm/flight-declaration-protocol'
       properties:
         flightDeclaration:
+          description: Declaration of the flight
           properties:
             actualLandingTime:
+              description: Actual landing time
               format: date-time
               type: string
+              x-ngsi:
+                type: Property
             actualTakeOffTime:
+              description: Actual take off time
               format: date-time
               type: string
+              x-ngsi:
+                type: Property
             contactUrl:
+              description: A url for further information
               format: uri
               type: string
+              x-ngsi:
+                type: Property
             expectTelemetry:
+              description: 'Whether it is expected telemetry data '
               type: boolean
+              x-ngsi:
+                type: Property
             idents:
+              description: Identifier items of the flight declaration
               items:
+                description: Every item in the idents
                 type: string
+                x-ngsi:
+                  type: Property
               type: array
+              x-ngsi:
+                type: Property
             operationMode:
+              description: Operation mode of the flight
               enum:
                 - vlos
                 - evlos
                 - bvlos
                 - automated
               type: string
+              x-ngsi:
+                type: Property
             originatingParty:
+              description: Country from which the goods/items being transported originate.
               type: string
+              x-ngsi:
+                type: Property
             parts:
+              description: 'elements of the flight declaration that can include details about the operator, the aircraft, specific approvals, means of compliance, and continuing airworthiness management'
               items:
+                description: Every item of the parts
                 type: string
+                x-ngsi:
+                  type: Property
               type: array
+              x-ngsi:
+                type: Property
             purpose:
+              description: Purpose of the flight
               type: string
+              x-ngsi:
+                type: Property
           type: object
+          x-ngsi:
+            type: Property
         flightId:
+          description: Identifier of the flight
           type: string
+          x-ngsi:
+            type: Property
         sequenceNumber:
+          description: Index of the message in a sequence
           type: number
+          x-ngsi:
+            type: Property
         version:
+          description: Version of the agent
           type: string
+          x-ngsi:
+            type: Property
       type: object
       x-ngsi:
         type: Property
@@ -330,7 +375,7 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
       type: string
       x-ngsi:
         type: Property
-    originatedByUnmannedAerialVehicle:
+    originatedByUnmannedAutonomousVehicle:
       description: 'A logical indicator of source of the message. True indicates it is the UAV itself, false indicates that it is a different source, a listening station software application or a different UAV'
       type: boolean
       x-ngsi:
@@ -425,8 +470,8 @@ UnmannedAerialVehicleTMSFlightMessageAgent:
     - type
   type: object
   x-derived-from: ""
-  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2024 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.UnmannedAerialVehicle/blob/master/UnmannedAerialVehicleTMSFlightMessageAgent/LICENSE.md
   x-model-schema: https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleTMSFlightMessageAgent/schema.json
   x-model-tags: GSMA
-  x-version: 0.0.1
+  x-version: 0.0.2
