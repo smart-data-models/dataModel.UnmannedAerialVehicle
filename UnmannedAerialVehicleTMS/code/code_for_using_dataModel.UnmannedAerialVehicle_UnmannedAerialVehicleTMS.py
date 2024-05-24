@@ -24,25 +24,30 @@
 #         curl -X GET http://localhost:1026/ngsi-ld/v1/entities?local=true&limit=1000
 #         
 #         # now the python code you can use to insert some value in the context broker according to the data model
+#         # Version Warning! 
+#         # This code is designed to work with the version 0.8 of pysmartdatamodels or later
+#         # to work with earlier version you need to replace the import instruction for
+#         # from pysmartdatamodels import pysmartdatamodels as sdm
 #         
-from pysmartdatamodels import pysmartdatamodels as sdm
+#         
+import pysmartdatamodels as sdm
 import subprocess
 serverUrl = "http://localhost:1026" # supposed that your broker is installed in localhost. Edit to match your configuration
 dataModel = "UnmannedAerialVehicleTMS"
 subject = "dataModel.UnmannedAerialVehicle"
-softwareApplication = {'type': 'Property', 'value': {'@type': 'https://schema.org/SoftwareApplication', 'operatingSystem': 'Linux', 'softwareVersion': '8.3', 'applicationCategory': 'Guidance'}}
+softwareApplication = {'@type': 'https://schema.org/SoftwareApplication', 'operatingSystem': 'Linux', 'softwareVersion': '8.3', 'applicationCategory': 'Guidance'}
 attribute = "softwareApplication"
 value = softwareApplication
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-operationalInstance = "{'type': 'Property', 'value': 'http://example.com/uavtms'}"
+operationalInstance = "http://example.com/uavtms"
 attribute = "operationalInstance"
 value = operationalInstance
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
 print(sdm.update_broker(dataModel, subject, attribute, value, serverUrl=serverUrl, updateThenCreate=True))
 
-operator = {'type': 'Property', 'value': ['urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a', 'urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852']}
+operator = ['urn:ngsi-ld:Person:bd710472-592b-11e8-852c-6fd149eae28a', 'urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852']
 attribute = "operator"
 value = operator
 # The next line creates the query for inserting this attribute in a NGSI-LD context broker if the attribute does not exist it creates it
