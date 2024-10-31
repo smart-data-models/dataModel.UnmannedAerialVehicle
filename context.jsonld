@@ -19,14 +19,14 @@
         "areaServed": "https://smartdatamodels.org/areaServed",
         "bbox": {
             "@container": "@list",
-            "@id": "geojson:bbox"
+            "@id": "https://purl.org/geojson/vocab#bbox"
         },
         "brandName": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/brandName",
         "categoryUAV": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/categoryUAV",
         "contactUrl": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/contactUrl",
         "coordinates": {
             "@container": "@list",
-            "@id": "geojson:coordinates"
+            "@id": "https://purl.org/geojson/vocab#coordinates"
         },
         "dataProvider": "https://smartdatamodels.org/dataProvider",
         "dateCreated": "https://smartdatamodels.org/dateCreated",
@@ -37,8 +37,8 @@
         "documentation": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/documentation",
         "elevation": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/elevation",
         "endAt": {
-            "@id": "ngsi-ld:endAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/endAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "eventResult": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventResult",
         "eventType": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/eventType",
@@ -53,7 +53,7 @@
         "groundSpeed": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/groundSpeed",
         "id": "@id",
         "idents": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/idents",
-        "location": "ngsi-ld:location",
+        "location": "https://uri.etsi.org/ngsi-ld/location",
         "manufacturerName": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/manufacturerName",
         "maxFlightAltitude": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/maxFlightAltitude",
         "maxFlightTime": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/maxFlightTime",
@@ -65,8 +65,8 @@
         "name": "https://smartdatamodels.org/name",
         "ngsi-ld": "https://uri.etsi.org/ngsi-ld/",
         "observedAt": {
-            "@id": "ngsi-ld:observedAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/observedAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "operatingSystem": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operatingSystem",
         "operationMode": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/operationMode",
@@ -88,8 +88,8 @@
         "softwareVersion": "https://smartdatamodels.org/dataModel.UnmannedAerialVehicle/softwareVersion",
         "source": "https://smartdatamodels.org/source",
         "startAt": {
-            "@id": "ngsi-ld:startAt",
-            "@type": "DateTime"
+            "@id": "https://uri.etsi.org/ngsi-ld/startAt",
+            "@type": "https://uri.etsi.org/ngsi-ld/DateTime"
         },
         "streetAddress": "https://smartdatamodels.org/streetAddress",
         "streetNr": "https://smartdatamodels.org/streetNr",
