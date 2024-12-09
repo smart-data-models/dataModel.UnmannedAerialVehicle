@@ -20,7 +20,6 @@
     "urn:ngsi-ld:Person:cbec3f1c-592b-11e8-943c-57802974f852"
   ],
   "@context": [
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld",
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/context.jsonld"
   ]
 }

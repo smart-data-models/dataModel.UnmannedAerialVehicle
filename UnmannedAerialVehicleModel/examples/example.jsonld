@@ -1,8 +1,4 @@
 {
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicleModel/UnmannedAerialVehicleModel/context.jsonld",
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
-  ],
   "id": "urn:ngsi-ld:UAVModel:6f4439d2-5925-11e8-a0ef-53719253dbbd",
   "type": "UnmannedAerialVehicleModel",
   "source": "https://source.example.com",
@@ -20,5 +16,8 @@
   "maxGroundVelocity": 100,
   "minWeight": 1,
   "minUnladenWeight": 1.5,
-  "maxLoad": 0.8
+  "maxLoad": 0.8,
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+  ]
 }

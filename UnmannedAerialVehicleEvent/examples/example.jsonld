@@ -1,8 +1,4 @@
 {
-  "@context": [
-    "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld",
-    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
-  ],
   "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",
   "type": "UnmannedAerialVehicleEvent",
   "source": "https://source.example.com",
@@ -21,5 +17,8 @@
   "endAt": "2016-08-23T10:19:16Z",
   "eventType": "overHeight",
   "description": "The UAV is flying over a mandatory height limit",
-  "eventResult": "forceBack"
+  "eventResult": "forceBack",
+  "@context": [
+    "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+  ]
 }

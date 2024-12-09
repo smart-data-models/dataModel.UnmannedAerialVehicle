@@ -1,8 +1,4 @@
 {
-    "@context": [
-        "https://smart-data-models.github.io/dataModel.UnmannedAerialVehicle/UnmannedAerialVehicleEvent/context.jsonld",
-        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
-    ],
     "id": "urn:ngsi-ld:UAVEvent:85df05a8-5922-11e8-ad9c-d7fa968d409d",
     "type": "UnmannedAerialVehicleEvent",
     "source": {
@@ -61,5 +57,8 @@
     "eventResult": {
         "type": "Property",
         "value": "forceBack"
-    }
+    },
+    "@context": [
+        "https://raw.githubusercontent.com/smart-data-models/dataModel.UnmannedAerialVehicle/master/context.jsonld"
+    ]
 }
