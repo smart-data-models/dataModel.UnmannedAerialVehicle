@@ -1,3 +1,23 @@
 /* (Beta) Export of data model UnmannedAerialVehicleADSB of the subject dataModel.UnmannedAerialVehicle for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
 CREATE TYPE UnmannedAerialVehicleADSB_type AS ENUM ('UnmannedAerialVehicleADSB');
-CREATE TABLE UnmannedAerialVehicleADSB (UnmannedAerialVehicleADSBroadcast TEXT, address JSON, alternateName TEXT, areaServed TEXT, dataProvider TEXT, dateCreated TIMESTAMP, dateModified TIMESTAMP, description TEXT, id TEXT PRIMARY KEY, location JSON, name TEXT, observedAt TIMESTAMP, originatedByUnmannedAerialVehicle BOOLEAN, owner JSON, seeAlso JSON, source TEXT, type UnmannedAerialVehicleADSB_type);
+CREATE TABLE UnmannedAerialVehicleADSB (
+  "UnmannedAerialVehicleADSBroadcast" TEXT,
+  "address" JSON,
+  "alternateName" TEXT,
+  "areaServed" TEXT,
+  "dataProvider" TEXT,
+  "dateCreated" TIMESTAMP,
+  "dateModified" TIMESTAMP,
+  "description" TEXT,
+  "id" TEXT PRIMARY KEY,
+  "location" JSON,
+  "name" TEXT,
+  "observedAt" TIMESTAMP,
+  "originatedByUnmannedAerialVehicle" BOOLEAN,
+  "originator" JSON,
+  "owner" JSON,
+  "seeAlso" JSON,
+  "source" TEXT,
+  "type" UnmannedAerialVehicleADSB_type,
+  "unmannedAerialVehicle" JSON
+);
