@@ -1,6 +1,6 @@
 /* (Beta) Export of data model UnmannedAerialVehicleEvent of the subject dataModel.UnmannedAerialVehicle for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE eventResult_type AS ENUM ('alarm', 'forceBack', 'forceHover', 'forceLand', 'logged', 'notify');
-CREATE TYPE eventType_type AS ENUM ('illegalFlight', 'closeToUnpermittedAirspace', 'overSpeed', 'overHeight', 'illegalWork');
+CREATE TYPE UnmannedAerialVehicleEvent_eventResult_type AS ENUM ('alarm', 'forceBack', 'forceHover', 'forceLand', 'logged', 'notify');
+CREATE TYPE UnmannedAerialVehicleEvent_eventType_type AS ENUM ('illegalFlight', 'closeToUnpermittedAirspace', 'overSpeed', 'overHeight', 'illegalWork');
 CREATE TYPE UnmannedAerialVehicleEvent_type AS ENUM ('UnmannedAerialVehicleEvent');
 CREATE TABLE UnmannedAerialVehicleEvent (
   "UnmannedAerialVehicle" JSON,
@@ -13,8 +13,8 @@ CREATE TABLE UnmannedAerialVehicleEvent (
   "description" TEXT,
   "elevation" NUMERIC,
   "endAt" TIMESTAMP,
-  "eventResult" eventResult_type,
-  "eventType" eventType_type,
+  "eventResult" UnmannedAerialVehicleEvent_eventResult_type,
+  "eventType" UnmannedAerialVehicleEvent_eventType_type,
   "id" TEXT PRIMARY KEY,
   "location" JSON,
   "name" TEXT,
