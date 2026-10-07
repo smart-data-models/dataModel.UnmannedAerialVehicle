@@ -1,19 +1,19 @@
 /* (Beta) Export of data model UnmannedAerialVehicleModel of the subject dataModel.UnmannedAerialVehicle for a PostgreSQL database. Pending translation of enumerations and multityped attributes */
-CREATE TYPE categoryUAV_type AS ENUM ('aerialPhotography', 'industry', 'mailing', 'plantProtection', 'routingInspection', 'transportation');
-CREATE TYPE fuelType_type AS ENUM ('biodiesel', 'cng', 'diesel', 'electric', 'ethanol', 'gasoline', 'hybrid electric/petrol', 'hybrid electric/diesel', 'hydrogen', 'lpgAutogas', 'other', 'petrol', 'petrol(unleaded)', 'petrol(leaded)');
+CREATE TYPE UnmannedAerialVehicleModel_categoryUAV_type AS ENUM ('aerialPhotography', 'industry', 'mailing', 'plantProtection', 'routingInspection', 'transportation');
+CREATE TYPE UnmannedAerialVehicleModel_fuelType_type AS ENUM ('biodiesel', 'cng', 'diesel', 'electric', 'ethanol', 'gasoline', 'hybrid electric/petrol', 'hybrid electric/diesel', 'hydrogen', 'lpgAutogas', 'other', 'petrol', 'petrol(unleaded)', 'petrol(leaded)');
 CREATE TYPE UnmannedAerialVehicleModel_type AS ENUM ('UnmannedAerialVehicleModel');
 CREATE TABLE UnmannedAerialVehicleModel (
   "address" JSON,
   "alternateName" TEXT,
   "areaServed" TEXT,
   "brandName" TEXT,
-  "categoryUAV" categoryUAV_type,
+  "categoryUAV" UnmannedAerialVehicleModel_categoryUAV_type,
   "dataProvider" TEXT,
   "dateCreated" TIMESTAMP,
   "dateModified" TIMESTAMP,
   "description" TEXT,
   "documentation" TEXT,
-  "fuelType" fuelType_type,
+  "fuelType" UnmannedAerialVehicleModel_fuelType_type,
   "id" TEXT PRIMARY KEY,
   "location" JSON,
   "manufacturerName" TEXT,
